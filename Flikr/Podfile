@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+platform :ios, '9.0'
+target 'Flikr' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Flikr
+   # iPad mini / iPhoneX detection
+   pod 'Device', '~> 3.0.0'
+   pod 'Alamofire'
+   #most widely-used auto-layout engine for ios
+   pod 'SnapKit', '~> 4.0.0' 
+   pod 'Material'
+   pod 'CocoaLumberjack'
+   pod 'CodableAlamofire'
+   pod 'SDWebImage'
+
+end

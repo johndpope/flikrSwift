@@ -1,0 +1,56 @@
+PODS:
+  - Alamofire (4.5.1)
+  - CocoaLumberjack (3.3.0):
+    - CocoaLumberjack/Default (= 3.3.0)
+    - CocoaLumberjack/Extensions (= 3.3.0)
+  - CocoaLumberjack/Default (3.3.0)
+  - CocoaLumberjack/Extensions (3.3.0):
+    - CocoaLumberjack/Default
+  - CodableAlamofire (1.1.0):
+    - Alamofire (~> 4.0)
+  - Device (3.0.3)
+  - Material (2.12.16):
+    - Material/Core (= 2.12.16)
+  - Material/Core (2.12.16):
+    - Motion (~> 1.2.5)
+  - Motion (1.2.5):
+    - Motion/Core (= 1.2.5)
+  - Motion/Core (1.2.5)
+  - SDWebImage (4.2.2):
+    - SDWebImage/Core (= 4.2.2)
+  - SDWebImage/Core (4.2.2)
+  - SnapKit (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - CocoaLumberjack
+  - CodableAlamofire
+  - Device (~> 3.0.0)
+  - Material
+  - SDWebImage
+  - SnapKit (~> 4.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CocoaLumberjack
+    - CodableAlamofire
+    - Device
+    - Material
+    - Motion
+    - SDWebImage
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
+  CodableAlamofire: e2d2edcec7cf413f7862c30c8fa98eded27a83f9
+  Device: 9a5264ee4e0f392e7153d2c46b10c8df46b7aad2
+  Material: 00fdeb39f5d97dc19f09b160e8b95c47e2ed708d
+  Motion: 88a8bee21926af792333f4b9e7170f710e9e48f3
+  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: b691c1c3d904a056f8ededb4330c4754577ca896
+
+COCOAPODS: 1.5.3

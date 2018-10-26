@@ -7,21 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B56E40C26C2A35200D299E5 /* Pods_Flikr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C52611C148D3F7EA1D124B /* Pods_Flikr.framework */; };
+		831C648921837ACA00E63375 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C648821837ACA00E63375 /* Constants.swift */; };
 		83EA5B692183770200FD6A0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B682183770200FD6A0E /* AppDelegate.swift */; };
-		83EA5B6B2183770200FD6A0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B6A2183770200FD6A0E /* ViewController.swift */; };
 		83EA5B6E2183770200FD6A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EA5B6C2183770200FD6A0E /* Main.storyboard */; };
 		83EA5B702183770300FD6A0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EA5B6F2183770300FD6A0E /* Assets.xcassets */; };
 		83EA5B732183770300FD6A0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EA5B712183770300FD6A0E /* LaunchScreen.storyboard */; };
+		83EA5B9A2183787800FD6A0E /* AppearanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B812183787800FD6A0E /* AppearanceService.swift */; };
+		83EA5B9B2183787800FD6A0E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B822183787800FD6A0E /* Notifications.swift */; };
+		83EA5B9C2183787800FD6A0E /* UIWindow+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B832183787800FD6A0E /* UIWindow+Category.swift */; };
+		83EA5B9D2183787800FD6A0E /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B842183787800FD6A0E /* Placeholder.swift */; };
+		83EA5B9E2183787800FD6A0E /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B852183787800FD6A0E /* ImageView.swift */; };
+		83EA5B9F2183787800FD6A0E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B862183787800FD6A0E /* Color.swift */; };
+		83EA5BA02183787800FD6A0E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B882183787800FD6A0E /* DataManager.swift */; };
+		83EA5BA12183787800FD6A0E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B892183787800FD6A0E /* Models.swift */; };
+		83EA5BA22183787800FD6A0E /* CustomURLCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B8B2183787800FD6A0E /* CustomURLCache.swift */; };
+		83EA5BA32183787800FD6A0E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B8C2183787800FD6A0E /* APIManager.swift */; };
+		83EA5BA42183787800FD6A0E /* LandingVC+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B8E2183787800FD6A0E /* LandingVC+UITableView.swift */; };
+		83EA5BA52183787800FD6A0E /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B8F2183787800FD6A0E /* MyTabBar.swift */; };
+		83EA5BA62183787800FD6A0E /* VideoCollectionViewCell+Snapkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B912183787800FD6A0E /* VideoCollectionViewCell+Snapkit.swift */; };
+		83EA5BA72183787800FD6A0E /* NetworkLandingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B922183787800FD6A0E /* NetworkLandingCell.swift */; };
+		83EA5BA82183787800FD6A0E /* HeaderSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B932183787800FD6A0E /* HeaderSectionView.swift */; };
+		83EA5BA92183787800FD6A0E /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B942183787800FD6A0E /* VideoCollectionViewCell.swift */; };
+		83EA5BAA2183787800FD6A0E /* FeaturedTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B952183787800FD6A0E /* FeaturedTableViewHeader.swift */; };
+		83EA5BAB2183787800FD6A0E /* VisualManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B962183787800FD6A0E /* VisualManager.swift */; };
+		83EA5BAC2183787800FD6A0E /* LandingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B972183787800FD6A0E /* LandingVC.swift */; };
+		83EA5BAD2183787800FD6A0E /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B982183787800FD6A0E /* DebugView.swift */; };
+		83EA5BAE2183787800FD6A0E /* MyTabBar+UITabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B992183787800FD6A0E /* MyTabBar+UITabBarControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02C52611C148D3F7EA1D124B /* Pods_Flikr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flikr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		831C648821837ACA00E63375 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		83EA5B652183770200FD6A0E /* Flikr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flikr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EA5B682183770200FD6A0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83EA5B6A2183770200FD6A0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83EA5B6D2183770200FD6A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83EA5B6F2183770300FD6A0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83EA5B722183770300FD6A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83EA5B742183770300FD6A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83EA5B812183787800FD6A0E /* AppearanceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceService.swift; sourceTree = "<group>"; };
+		83EA5B822183787800FD6A0E /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		83EA5B832183787800FD6A0E /* UIWindow+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Category.swift"; sourceTree = "<group>"; };
+		83EA5B842183787800FD6A0E /* Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
+		83EA5B852183787800FD6A0E /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		83EA5B862183787800FD6A0E /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		83EA5B882183787800FD6A0E /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		83EA5B892183787800FD6A0E /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		83EA5B8B2183787800FD6A0E /* CustomURLCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomURLCache.swift; sourceTree = "<group>"; };
+		83EA5B8C2183787800FD6A0E /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		83EA5B8E2183787800FD6A0E /* LandingVC+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LandingVC+UITableView.swift"; sourceTree = "<group>"; };
+		83EA5B8F2183787800FD6A0E /* MyTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
+		83EA5B912183787800FD6A0E /* VideoCollectionViewCell+Snapkit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VideoCollectionViewCell+Snapkit.swift"; sourceTree = "<group>"; };
+		83EA5B922183787800FD6A0E /* NetworkLandingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLandingCell.swift; sourceTree = "<group>"; };
+		83EA5B932183787800FD6A0E /* HeaderSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderSectionView.swift; sourceTree = "<group>"; };
+		83EA5B942183787800FD6A0E /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		83EA5B952183787800FD6A0E /* FeaturedTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedTableViewHeader.swift; sourceTree = "<group>"; };
+		83EA5B962183787800FD6A0E /* VisualManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualManager.swift; sourceTree = "<group>"; };
+		83EA5B972183787800FD6A0E /* LandingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingVC.swift; sourceTree = "<group>"; };
+		83EA5B982183787800FD6A0E /* DebugView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
+		83EA5B992183787800FD6A0E /* MyTabBar+UITabBarControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MyTabBar+UITabBarControllerDelegate.swift"; sourceTree = "<group>"; };
+		DDF70901035D9FB05A00CB05 /* Pods-Flikr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flikr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flikr/Pods-Flikr.release.xcconfig"; sourceTree = "<group>"; };
+		F615A9AA1E82147DD96CC669 /* Pods-Flikr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flikr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flikr/Pods-Flikr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B56E40C26C2A35200D299E5 /* Pods_Flikr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +87,8 @@
 			children = (
 				83EA5B672183770200FD6A0E /* Flikr */,
 				83EA5B662183770200FD6A0E /* Products */,
+				C8BAB9B548F6107314A6E81E /* Pods */,
+				EEE97FA20802C09B49A7EC76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +103,92 @@
 		83EA5B672183770200FD6A0E /* Flikr */ = {
 			isa = PBXGroup;
 			children = (
+				831C648821837ACA00E63375 /* Constants.swift */,
+				83EA5B8D2183787800FD6A0E /* Controller */,
+				83EA5B872183787800FD6A0E /* DataModelNetwork */,
+				83EA5B802183787800FD6A0E /* Extensions */,
 				83EA5B682183770200FD6A0E /* AppDelegate.swift */,
-				83EA5B6A2183770200FD6A0E /* ViewController.swift */,
 				83EA5B6C2183770200FD6A0E /* Main.storyboard */,
 				83EA5B6F2183770300FD6A0E /* Assets.xcassets */,
 				83EA5B712183770300FD6A0E /* LaunchScreen.storyboard */,
 				83EA5B742183770300FD6A0E /* Info.plist */,
 			);
 			path = Flikr;
+			sourceTree = "<group>";
+		};
+		83EA5B802183787800FD6A0E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83EA5B812183787800FD6A0E /* AppearanceService.swift */,
+				83EA5B822183787800FD6A0E /* Notifications.swift */,
+				83EA5B832183787800FD6A0E /* UIWindow+Category.swift */,
+				83EA5B842183787800FD6A0E /* Placeholder.swift */,
+				83EA5B852183787800FD6A0E /* ImageView.swift */,
+				83EA5B862183787800FD6A0E /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		83EA5B872183787800FD6A0E /* DataModelNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				83EA5B882183787800FD6A0E /* DataManager.swift */,
+				83EA5B892183787800FD6A0E /* Models.swift */,
+				83EA5B8A2183787800FD6A0E /* API */,
+			);
+			path = DataModelNetwork;
+			sourceTree = "<group>";
+		};
+		83EA5B8A2183787800FD6A0E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				83EA5B8B2183787800FD6A0E /* CustomURLCache.swift */,
+				83EA5B8C2183787800FD6A0E /* APIManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		83EA5B8D2183787800FD6A0E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				83EA5B8E2183787800FD6A0E /* LandingVC+UITableView.swift */,
+				83EA5B8F2183787800FD6A0E /* MyTabBar.swift */,
+				83EA5B902183787800FD6A0E /* Cells */,
+				83EA5B962183787800FD6A0E /* VisualManager.swift */,
+				83EA5B972183787800FD6A0E /* LandingVC.swift */,
+				83EA5B982183787800FD6A0E /* DebugView.swift */,
+				83EA5B992183787800FD6A0E /* MyTabBar+UITabBarControllerDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		83EA5B902183787800FD6A0E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				83EA5B912183787800FD6A0E /* VideoCollectionViewCell+Snapkit.swift */,
+				83EA5B922183787800FD6A0E /* NetworkLandingCell.swift */,
+				83EA5B932183787800FD6A0E /* HeaderSectionView.swift */,
+				83EA5B942183787800FD6A0E /* VideoCollectionViewCell.swift */,
+				83EA5B952183787800FD6A0E /* FeaturedTableViewHeader.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C8BAB9B548F6107314A6E81E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F615A9AA1E82147DD96CC669 /* Pods-Flikr.debug.xcconfig */,
+				DDF70901035D9FB05A00CB05 /* Pods-Flikr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EEE97FA20802C09B49A7EC76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02C52611C148D3F7EA1D124B /* Pods_Flikr.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83EA5B772183770300FD6A0E /* Build configuration list for PBXNativeTarget "Flikr" */;
 			buildPhases = (
+				66A85D48CA73E2662287EBAE /* [CP] Check Pods Manifest.lock */,
 				83EA5B612183770200FD6A0E /* Sources */,
 				83EA5B622183770200FD6A0E /* Frameworks */,
 				83EA5B632183770200FD6A0E /* Resources */,
+				CF3933C45D52B647BB7F1E21 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +259,95 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		66A85D48CA73E2662287EBAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flikr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF3933C45D52B647BB7F1E21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Flikr/Pods-Flikr-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/CodableAlamofire/CodableAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Device/Device.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Device.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flikr/Pods-Flikr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		83EA5B612183770200FD6A0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83EA5B6B2183770200FD6A0E /* ViewController.swift in Sources */,
+				83EA5BA92183787800FD6A0E /* VideoCollectionViewCell.swift in Sources */,
+				83EA5BA32183787800FD6A0E /* APIManager.swift in Sources */,
+				83EA5B9C2183787800FD6A0E /* UIWindow+Category.swift in Sources */,
+				83EA5B9B2183787800FD6A0E /* Notifications.swift in Sources */,
+				83EA5BA52183787800FD6A0E /* MyTabBar.swift in Sources */,
+				83EA5B9A2183787800FD6A0E /* AppearanceService.swift in Sources */,
+				831C648921837ACA00E63375 /* Constants.swift in Sources */,
 				83EA5B692183770200FD6A0E /* AppDelegate.swift in Sources */,
+				83EA5B9F2183787800FD6A0E /* Color.swift in Sources */,
+				83EA5BAE2183787800FD6A0E /* MyTabBar+UITabBarControllerDelegate.swift in Sources */,
+				83EA5BA62183787800FD6A0E /* VideoCollectionViewCell+Snapkit.swift in Sources */,
+				83EA5BAD2183787800FD6A0E /* DebugView.swift in Sources */,
+				83EA5BAC2183787800FD6A0E /* LandingVC.swift in Sources */,
+				83EA5BA82183787800FD6A0E /* HeaderSectionView.swift in Sources */,
+				83EA5B9E2183787800FD6A0E /* ImageView.swift in Sources */,
+				83EA5BA72183787800FD6A0E /* NetworkLandingCell.swift in Sources */,
+				83EA5BA02183787800FD6A0E /* DataManager.swift in Sources */,
+				83EA5B9D2183787800FD6A0E /* Placeholder.swift in Sources */,
+				83EA5BA22183787800FD6A0E /* CustomURLCache.swift in Sources */,
+				83EA5BA12183787800FD6A0E /* Models.swift in Sources */,
+				83EA5BAB2183787800FD6A0E /* VisualManager.swift in Sources */,
+				83EA5BAA2183787800FD6A0E /* FeaturedTableViewHeader.swift in Sources */,
+				83EA5BA42183787800FD6A0E /* LandingVC+UITableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +431,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -274,12 +486,14 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		83EA5B782183770300FD6A0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F615A9AA1E82147DD96CC669 /* Pods-Flikr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,13 +505,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.johndpope.Flikr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		83EA5B792183770300FD6A0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDF70901035D9FB05A00CB05 /* Pods-Flikr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,7 +524,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.johndpope.Flikr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
