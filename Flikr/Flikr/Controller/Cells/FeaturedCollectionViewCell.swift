@@ -46,7 +46,7 @@ class FeaturedCollectionViewCell: CollectionViewCell {
         heroImageView.clipsToBounds = true
         heroImageView.snp.remakeConstraints { (make) -> Void in
             make.width.top.left.equalToSuperview()
-            make.height.equalTo(160)
+            make.height.equalTo(featuredHeaderHeight-40)
         }
 
 

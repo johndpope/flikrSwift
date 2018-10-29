@@ -10,7 +10,7 @@ let DM = DataManager.shared
 
 let kPlaceholderImage = UIImage(named: "placeholder")
 
-
+let featuredHeaderHeight:CGFloat = 300
 
 
 
@@ -31,6 +31,8 @@ struct currentSize {
     static func getCurrentSize() -> CGSize {
         return CGSize(width: currentSize.width, height: currentSize.height)
     }
+    
+
 }
 
 

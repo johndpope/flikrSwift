@@ -13,8 +13,6 @@ class LandingVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         return tb
     }()
     var headerCV:UICollectionView!
-    var featuredTableHeader = FeaturedTableViewHeader()
-//    var featuredTableHeaderCollection = VideoCollectionViewCell()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +39,7 @@ class LandingVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
     // Featured Header image
     func addHeaderView(){
         cellLayout.scrollDirection = .horizontal
-        headerCV = UICollectionView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 200), collectionViewLayout: cellLayout)
+        headerCV = UICollectionView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: featuredHeaderHeight), collectionViewLayout: cellLayout)
         headerCV.register(FeaturedCollectionViewCell.self, forCellWithReuseIdentifier: FeaturedCollectionViewCell.ID)
         headerCV.isPagingEnabled = true
         headerCV.autoresizingMask = [.flexibleWidth]

@@ -27,7 +27,7 @@ extension LandingVC: UICollectionViewDataSource, UICollectionViewDelegate, UICol
 
     
     func collectionView(_: UICollectionView, layout _: UICollectionViewLayout, sizeForItemAt _: IndexPath) -> CGSize {
-        return CGSize(width: currentSize.width, height: 200)
+        return CGSize(width: currentSize.width, height: featuredHeaderHeight)
     }
     
     func collectionView(_: UICollectionView, layout _: UICollectionViewLayout, minimumLineSpacingForSectionAt _: Int) -> CGFloat {
