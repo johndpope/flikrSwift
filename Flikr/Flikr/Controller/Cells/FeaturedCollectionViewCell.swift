@@ -53,11 +53,12 @@ class FeaturedCollectionViewCell: CollectionViewCell {
         
         addSubview(titleLabel)
         titleLabel.font = UIFont.systemFont(ofSize: 25, weight: UIFont.Weight.medium)
-        titleLabel.text = "blah blah blah"
+        titleLabel.text = "Loading..."
         titleLabel.textColor = .white
         titleLabel.numberOfLines = 1
         titleLabel.textAlignment = .left
         titleLabel.snp.remakeConstraints { (make) -> Void in
+            make.width.equalToSuperview().offset(-30) // make it less to avoid overlapping
             make.bottom.equalToSuperview().offset(-10)
             make.left.equalToSuperview().offset(10)
         }
