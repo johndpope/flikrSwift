@@ -44,6 +44,14 @@ class APIManager {
     // optimisations could include reducing number of images to fetch
     func fetchLandingContent(){
         
+        // Featured Photo at top 
+        let zooTitle = "Zoo"
+        searchFlickrForTerm(zooTitle) { (photos, error)  in
+            let channel = FlikrChannel(name: zooTitle, photos: photos)
+            DM.featuredPhotos = channel.photos
+            Notificator.fireNotification(kFeaturedLoaded)
+        }
+        
         
         let gorillaTitle = "Gorilla"
         searchFlickrForTerm(gorillaTitle) { (photos, error)  in

@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0B56E40C26C2A35200D299E5 /* Pods_Flikr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C52611C148D3F7EA1D124B /* Pods_Flikr.framework */; };
-		831C648921837ACA00E63375 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C648821837ACA00E63375 /* Constants.swift */; };
+		17EB592821875CD400ABA010 /* LandingVC+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB592721875CD300ABA010 /* LandingVC+UICollectionView.swift */; };
+		17EB592A2187634700ABA010 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB59292187634700ABA010 /* FeaturedCollectionViewCell.swift */; };
 		83EA5B692183770200FD6A0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B682183770200FD6A0E /* AppDelegate.swift */; };
 		83EA5B6E2183770200FD6A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EA5B6C2183770200FD6A0E /* Main.storyboard */; };
 		83EA5B702183770300FD6A0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EA5B6F2183770300FD6A0E /* Assets.xcassets */; };
@@ -38,7 +39,8 @@
 
 /* Begin PBXFileReference section */
 		02C52611C148D3F7EA1D124B /* Pods_Flikr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flikr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		831C648821837ACA00E63375 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		17EB592721875CD300ABA010 /* LandingVC+UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LandingVC+UICollectionView.swift"; sourceTree = "<group>"; };
+		17EB59292187634700ABA010 /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
 		83EA5B652183770200FD6A0E /* Flikr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flikr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EA5B682183770200FD6A0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83EA5B6D2183770200FD6A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,7 +105,6 @@
 		83EA5B672183770200FD6A0E /* Flikr */ = {
 			isa = PBXGroup;
 			children = (
-				831C648821837ACA00E63375 /* Constants.swift */,
 				83EA5B8D2183787800FD6A0E /* Controller */,
 				83EA5B872183787800FD6A0E /* DataModelNetwork */,
 				83EA5B802183787800FD6A0E /* Extensions */,
@@ -151,13 +152,14 @@
 		83EA5B8D2183787800FD6A0E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				83EA5B902183787800FD6A0E /* Cells */,
+				83EA5B982183787800FD6A0E /* DebugView.swift */,
+				83EA5B972183787800FD6A0E /* LandingVC.swift */,
+				17EB592721875CD300ABA010 /* LandingVC+UICollectionView.swift */,
 				83EA5B8E2183787800FD6A0E /* LandingVC+UITableView.swift */,
 				83EA5B8F2183787800FD6A0E /* MyTabBar.swift */,
-				83EA5B902183787800FD6A0E /* Cells */,
-				83EA5B962183787800FD6A0E /* VisualManager.swift */,
-				83EA5B972183787800FD6A0E /* LandingVC.swift */,
-				83EA5B982183787800FD6A0E /* DebugView.swift */,
 				83EA5B992183787800FD6A0E /* MyTabBar+UITabBarControllerDelegate.swift */,
+				83EA5B962183787800FD6A0E /* VisualManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,6 +167,7 @@
 		83EA5B902183787800FD6A0E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				17EB59292187634700ABA010 /* FeaturedCollectionViewCell.swift */,
 				83EA5B912183787800FD6A0E /* VideoCollectionViewCell+Snapkit.swift */,
 				83EA5B922183787800FD6A0E /* NetworkLandingCell.swift */,
 				83EA5B932183787800FD6A0E /* HeaderSectionView.swift */,
@@ -331,11 +334,11 @@
 				83EA5B9B2183787800FD6A0E /* Notifications.swift in Sources */,
 				83EA5BA52183787800FD6A0E /* MyTabBar.swift in Sources */,
 				83EA5B9A2183787800FD6A0E /* AppearanceService.swift in Sources */,
-				831C648921837ACA00E63375 /* Constants.swift in Sources */,
 				83EA5B692183770200FD6A0E /* AppDelegate.swift in Sources */,
 				83EA5B9F2183787800FD6A0E /* Color.swift in Sources */,
 				83EA5BAE2183787800FD6A0E /* MyTabBar+UITabBarControllerDelegate.swift in Sources */,
 				83EA5BA62183787800FD6A0E /* VideoCollectionViewCell+Snapkit.swift in Sources */,
+				17EB592821875CD400ABA010 /* LandingVC+UICollectionView.swift in Sources */,
 				83EA5BAD2183787800FD6A0E /* DebugView.swift in Sources */,
 				83EA5BAC2183787800FD6A0E /* LandingVC.swift in Sources */,
 				83EA5BA82183787800FD6A0E /* HeaderSectionView.swift in Sources */,
@@ -345,6 +348,7 @@
 				83EA5B9D2183787800FD6A0E /* Placeholder.swift in Sources */,
 				83EA5BA22183787800FD6A0E /* CustomURLCache.swift in Sources */,
 				83EA5BA12183787800FD6A0E /* Models.swift in Sources */,
+				17EB592A2187634700ABA010 /* FeaturedCollectionViewCell.swift in Sources */,
 				83EA5BAB2183787800FD6A0E /* VisualManager.swift in Sources */,
 				83EA5BAA2183787800FD6A0E /* FeaturedTableViewHeader.swift in Sources */,
 				83EA5BA42183787800FD6A0E /* LandingVC+UITableView.swift in Sources */,

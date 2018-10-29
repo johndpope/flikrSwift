@@ -45,6 +45,7 @@ class DataManager {
     
     
     var flikrChannels: [FlikrChannel] = []
+    var featuredPhotos: [Photo] = []
 
     func populateData(){
         

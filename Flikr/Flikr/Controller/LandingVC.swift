@@ -7,13 +7,14 @@ class LandingVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
     var selectedIndex:Int = 0
     let footerHeight:CGFloat = 80
-    
+    let cellLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
     lazy var myTableView: UITableView = {
         let tb = UITableView(frame: .zero, style: .grouped)
         return tb
     }()
-
+    var headerCV:UICollectionView!
     var featuredTableHeader = FeaturedTableViewHeader()
+//    var featuredTableHeaderCollection = VideoCollectionViewCell()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,27 +28,44 @@ class LandingVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         myTableView.separatorStyle = .none
         myTableView.register(NetworkLandingCell.self, forCellReuseIdentifier: NetworkLandingCell.ID)
         myTableView.tableFooterView = UITableViewHeaderFooterView(frame:CGRect(x:0,y:0,width:1,height:footerHeight))
-        
-        
-        // Header image
-        myTableView.tableHeaderView = featuredTableHeader
-        
-        // demo header
-        let photo = MyPhoto(id: 1, title: "Good night Gorilla", photoDescription: "bla bla", thumbURL: "https://www.underthemoonlightsg.com/uploads/1/0/8/8/108893287/s498573774969902924_p179_i2_w685.jpeg")
-        featuredTableHeader.configureHeader(photo: photo)
-        
         myTableView.dataSource = self
         myTableView.delegate = self
+
+        addHeaderView()
         reloadTableView()
         configureConstraints()
         addListeners()
     }
 
+    
+    // Featured Header image
+    func addHeaderView(){
+        cellLayout.scrollDirection = .horizontal
+        headerCV = UICollectionView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 200), collectionViewLayout: cellLayout)
+        headerCV.register(FeaturedCollectionViewCell.self, forCellWithReuseIdentifier: FeaturedCollectionViewCell.ID)
+        headerCV.isPagingEnabled = true
+        headerCV.autoresizingMask = [.flexibleWidth]
+        headerCV.showsVerticalScrollIndicator = false
+        headerCV.showsHorizontalScrollIndicator = true
+        headerCV.isScrollEnabled = true
+        headerCV.bounces = true
+        headerCV.delegate = self
+        headerCV.dataSource = self
+        headerCV.backgroundColor = UIColor.onyx
+        myTableView.tableHeaderView = headerCV
 
+        
+    }
+    
+    
     func addListeners(){
         NotificationCenter.default.addObserver(self, selector: #selector(dataLoaded),  name: kFlikrLoaded, object: nil)
+          NotificationCenter.default.addObserver(self, selector: #selector(featuredDataLoaded),  name: kFeaturedLoaded, object: nil)
     }
-  
+    
+    @objc func featuredDataLoaded(){
+             headerCV.reloadData()
+    }
     @objc func dataLoaded(){
         myTableView.reloadData()
     }
