@@ -24,7 +24,9 @@ extension LandingVC: UICollectionViewDataSource, UICollectionViewDelegate, UICol
         return cell
     }
     
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+        print("call")
+    }
     
     func collectionView(_: UICollectionView, layout _: UICollectionViewLayout, sizeForItemAt _: IndexPath) -> CGSize {
         return CGSize(width: currentSize.width, height: featuredHeaderHeight)
@@ -35,10 +37,5 @@ extension LandingVC: UICollectionViewDataSource, UICollectionViewDelegate, UICol
     }
     
 
-    func collectionView(_: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-     print("Hero selected")
-        
-    }
-    
     
 }

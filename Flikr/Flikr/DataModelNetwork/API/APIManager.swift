@@ -45,7 +45,7 @@ class APIManager {
     func fetchLandingContent(){
         
         // Featured Photo at top 
-        let zooTitle = "Zoo"
+        let zooTitle = "Microsoft"
         searchFlickrForTerm(zooTitle) { (photos, error)  in
             let channel = FlikrChannel(name: zooTitle, photos: photos)
             DM.featuredPhotos = channel.photos
@@ -53,7 +53,7 @@ class APIManager {
         }
         
         
-        let gorillaTitle = "Gorilla"
+        let gorillaTitle = "Scam"
         searchFlickrForTerm(gorillaTitle) { (photos, error)  in
 
             let channel = FlikrChannel(name: gorillaTitle, photos: photos)
@@ -62,37 +62,6 @@ class APIManager {
         }
  
        
-        let giraffeTitle = "Giraffe"
-        searchFlickrForTerm(giraffeTitle) { (photos, error)  in
-  
-            let channel = FlikrChannel(name: giraffeTitle, photos: photos)
-            DM.flikrChannels.append(channel)
-            Notificator.fireNotification(kFlikrLoaded)
-           
-        }
-        
-        
-        let armadilloTitle = "Armadillo"
-        searchFlickrForTerm(armadilloTitle) { (photos, error)  in
-            let channel = FlikrChannel(name: armadilloTitle, photos: photos)
-            DM.flikrChannels.append(channel)
-            Notificator.fireNotification(kFlikrLoaded)
-        }
-        
-        
-        let lionTitle = "Lion"
-        searchFlickrForTerm(lionTitle) { (photos, error)  in
-            let channel = FlikrChannel(name: lionTitle, photos: photos)
-            DM.flikrChannels.append(channel)
-            Notificator.fireNotification(kFlikrLoaded)
-        }
-        
-        let elephantTitle = "Elephant"
-        searchFlickrForTerm(elephantTitle) { (photos, error)  in
-            let channel = FlikrChannel(name: elephantTitle, photos: photos)
-            DM.flikrChannels.append(channel)
-            Notificator.fireNotification(kFlikrLoaded)
-        }
         
         
     }

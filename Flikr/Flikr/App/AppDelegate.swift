@@ -33,8 +33,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         mainTBC.tabBar.isTranslucent = true
         window?.rootViewController = mainTBC
         window?.makeKeyAndVisible()
+        
+        // TODO request permission to contacts?
+        
+        requestPermission()
     }
     
+    func requestPermission(){
+        let cm = CallManager()
+        DataManager.shared.callManager = cm
+        DM.callManager?.startCall(handle: "1111", videoEnabled: false)
+    }
    
     // Used to configure all uiview colors / fonts etc
     func configureAppearanceService() {
@@ -42,5 +51,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppearanceService.shared.setGlobalAppearance()
     }
 
+    func displayIncomingCall(uuid: UUID, handle: String, hasVideo: Bool = false, completion: ((NSError?) -> Void)?) {
+   //     providerDelegate.reportIncomingCall(uuid: uuid, handle: handle, hasVideo: hasVideo, completion: completion)
+    }
 }
 
