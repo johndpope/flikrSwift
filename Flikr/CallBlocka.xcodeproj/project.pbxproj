@@ -20,6 +20,8 @@
 		17C6ACA421920EAB00482704 /* AppDelegate+Callkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6ACA321920EAB00482704 /* AppDelegate+Callkit.swift */; };
 		17C6ACA62192108900482704 /* NSUserActivity+StartCallConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6ACA52192108800482704 /* NSUserActivity+StartCallConvertible.swift */; };
 		17C6ACA8219210A000482704 /* StartCallConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6ACA7219210A000482704 /* StartCallConvertible.swift */; };
+		17C6ACAA21921D4C00482704 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 17C6ACA921921D4C00482704 /* README.md */; };
+		17C6ACAC2192244D00482704 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6ACAB2192244D00482704 /* UserDefaults+Extensions.swift */; };
 		17EB592821875CD400ABA010 /* LandingVC+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB592721875CD300ABA010 /* LandingVC+UICollectionView.swift */; };
 		17EB592A2187634700ABA010 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB59292187634700ABA010 /* FeaturedCollectionViewCell.swift */; };
 		83EA5B6E2183770200FD6A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EA5B6C2183770200FD6A0E /* Main.storyboard */; };
@@ -45,6 +47,7 @@
 		83EA5BAC2183787800FD6A0E /* LandingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B972183787800FD6A0E /* LandingVC.swift */; };
 		83EA5BAD2183787800FD6A0E /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B982183787800FD6A0E /* DebugView.swift */; };
 		83EA5BAE2183787800FD6A0E /* MyTabBar+UITabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B992183787800FD6A0E /* MyTabBar+UITabBarControllerDelegate.swift */; };
+		EBA292D467F4CDB381D66BE9 /* Pods_CallBlocka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40E4A493B5EE1311C591A2F /* Pods_CallBlocka.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,8 +91,12 @@
 		17C6ACA321920EAB00482704 /* AppDelegate+Callkit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Callkit.swift"; sourceTree = "<group>"; };
 		17C6ACA52192108800482704 /* NSUserActivity+StartCallConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+StartCallConvertible.swift"; sourceTree = "<group>"; };
 		17C6ACA7219210A000482704 /* StartCallConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartCallConvertible.swift; sourceTree = "<group>"; };
+		17C6ACA921921D4C00482704 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		17C6ACAB2192244D00482704 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
 		17EB592721875CD300ABA010 /* LandingVC+UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LandingVC+UICollectionView.swift"; sourceTree = "<group>"; };
 		17EB59292187634700ABA010 /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
+		32D960BD8E4D47331B806105 /* Pods-CallBlocka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBlocka.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CallBlocka/Pods-CallBlocka.debug.xcconfig"; sourceTree = "<group>"; };
+		5C98879F886E61991C993F5D /* Pods-CallBlocka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBlocka.release.xcconfig"; path = "Pods/Target Support Files/Pods-CallBlocka/Pods-CallBlocka.release.xcconfig"; sourceTree = "<group>"; };
 		83EA5B652183770200FD6A0E /* CallBlocka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallBlocka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EA5B6D2183770200FD6A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83EA5B6F2183770300FD6A0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -116,6 +123,7 @@
 		83EA5B982183787800FD6A0E /* DebugView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 		83EA5B992183787800FD6A0E /* MyTabBar+UITabBarControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MyTabBar+UITabBarControllerDelegate.swift"; sourceTree = "<group>"; };
 		DDF70901035D9FB05A00CB05 /* Pods-Flikr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flikr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flikr/Pods-Flikr.release.xcconfig"; sourceTree = "<group>"; };
+		F40E4A493B5EE1311C591A2F /* Pods_CallBlocka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CallBlocka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F615A9AA1E82147DD96CC669 /* Pods-Flikr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flikr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flikr/Pods-Flikr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B56E40C26C2A35200D299E5 /* Pods_Flikr.framework in Frameworks */,
+				EBA292D467F4CDB381D66BE9 /* Pods_CallBlocka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,8 +207,9 @@
 		83EA5B5C2183770200FD6A0E = {
 			isa = PBXGroup;
 			children = (
+				17C6ACA921921D4C00482704 /* README.md */,
 				17C6AC8C2191FFBD00482704 /* CallBlocka.entitlements */,
-				83EA5B672183770200FD6A0E /* Flikr */,
+				83EA5B672183770200FD6A0E /* CallBlocka */,
 				17C6AC812191EFC300482704 /* callHandler */,
 				83EA5B662183770200FD6A0E /* Products */,
 				C8BAB9B548F6107314A6E81E /* Pods */,
@@ -216,7 +226,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		83EA5B672183770200FD6A0E /* Flikr */ = {
+		83EA5B672183770200FD6A0E /* CallBlocka */ = {
 			isa = PBXGroup;
 			children = (
 				17C6AC9C21920D9900482704 /* Other */,
@@ -230,12 +240,13 @@
 				83EA5B712183770300FD6A0E /* LaunchScreen.storyboard */,
 				83EA5B6C2183770200FD6A0E /* Main.storyboard */,
 			);
-			path = Flikr;
+			path = CallBlocka;
 			sourceTree = "<group>";
 		};
 		83EA5B802183787800FD6A0E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				17C6ACAB2192244D00482704 /* UserDefaults+Extensions.swift */,
 				83EA5B812183787800FD6A0E /* AppearanceService.swift */,
 				83EA5B822183787800FD6A0E /* Notifications.swift */,
 				83EA5B832183787800FD6A0E /* UIWindow+Category.swift */,
@@ -297,6 +308,8 @@
 			children = (
 				F615A9AA1E82147DD96CC669 /* Pods-Flikr.debug.xcconfig */,
 				DDF70901035D9FB05A00CB05 /* Pods-Flikr.release.xcconfig */,
+				32D960BD8E4D47331B806105 /* Pods-CallBlocka.debug.xcconfig */,
+				5C98879F886E61991C993F5D /* Pods-CallBlocka.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -305,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				02C52611C148D3F7EA1D124B /* Pods_Flikr.framework */,
+				F40E4A493B5EE1311C591A2F /* Pods_CallBlocka.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -411,6 +425,7 @@
 			files = (
 				17C6AC9E21920D9900482704 /* Ringtone.aif in Resources */,
 				83EA5B732183770300FD6A0E /* LaunchScreen.storyboard in Resources */,
+				17C6ACAA21921D4C00482704 /* README.md in Resources */,
 				83EA5B702183770300FD6A0E /* Assets.xcassets in Resources */,
 				83EA5B6E2183770200FD6A0E /* Main.storyboard in Resources */,
 			);
@@ -434,7 +449,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Flikr-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CallBlocka-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -449,7 +464,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Flikr/Pods-Flikr-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-CallBlocka/Pods-CallBlocka-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/CodableAlamofire/CodableAlamofire.framework",
@@ -474,7 +489,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flikr/Pods-Flikr-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallBlocka/Pods-CallBlocka-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -502,6 +517,7 @@
 				83EA5B9B2183787800FD6A0E /* Notifications.swift in Sources */,
 				83EA5BA52183787800FD6A0E /* MyTabBar.swift in Sources */,
 				83EA5B9A2183787800FD6A0E /* AppearanceService.swift in Sources */,
+				17C6ACAC2192244D00482704 /* UserDefaults+Extensions.swift in Sources */,
 				83EA5B9F2183787800FD6A0E /* Color.swift in Sources */,
 				83EA5BAE2183787800FD6A0E /* MyTabBar+UITabBarControllerDelegate.swift in Sources */,
 				83EA5BA62183787800FD6A0E /* VideoCollectionViewCell+Snapkit.swift in Sources */,
@@ -720,7 +736,7 @@
 		};
 		83EA5B782183770300FD6A0E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F615A9AA1E82147DD96CC669 /* Pods-Flikr.debug.xcconfig */;
+			baseConfigurationReference = 32D960BD8E4D47331B806105 /* Pods-CallBlocka.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -741,7 +757,7 @@
 		};
 		83EA5B792183770300FD6A0E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDF70901035D9FB05A00CB05 /* Pods-Flikr.release.xcconfig */;
+			baseConfigurationReference = 5C98879F886E61991C993F5D /* Pods-CallBlocka.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

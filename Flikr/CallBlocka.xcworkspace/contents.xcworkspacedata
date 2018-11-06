@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/jpope/Documents/gitWorkspace/flikrSwift/Flikr/CallBlocka.xcodeproj">
+      location = "group:CallBlocka.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

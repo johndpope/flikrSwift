@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow.window()
         DM.weakWindow = window
         
-        let mainTBC = UITabBarController()
+        let mainTBC = MainTabBarController()
         MyTabBar.shared.weakMainTBC = mainTBC
         mainTBC.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         mainTBC.viewControllers = MyTabBar.buildNavigationControllers()

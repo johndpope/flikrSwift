@@ -33,7 +33,7 @@ final class ProviderDelegate: NSObject, CXProviderDelegate {
 
     /// The app's provider configuration, representing its CallKit capabilities
     static var providerConfiguration: CXProviderConfiguration {
-        let localizedName = NSLocalizedString(appDisplayName ?? "", comment: "Name of application")
+        let localizedName = NSLocalizedString(appDisplayName ?? "", comment: "CallBlocka")
         let providerConfiguration = CXProviderConfiguration(localizedName: localizedName)
         providerConfiguration.supportsVideo = true
         providerConfiguration.maximumCallsPerCallGroup = 1

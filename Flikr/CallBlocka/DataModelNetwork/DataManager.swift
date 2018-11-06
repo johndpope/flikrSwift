@@ -41,6 +41,7 @@ class DataManager {
     static let shared = DataManager()
     weak var weakWindow: UIWindow?
     weak var weakLandingNC:MyNavigationController?
+    
 
 
 

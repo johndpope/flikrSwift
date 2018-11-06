@@ -12,14 +12,17 @@ extension AppDelegate :PKPushRegistryDelegate{
         
         providerDelegate = ProviderDelegate(callManager: callManager)
         
-        let handle = "123"
-        let video = false
-
-        self.displayIncomingCall(uuid: UUID(), handle:handle , hasVideo:video )
-        
+   
         
     }
     
+    func testIncomingCall(){
+        let handle = "123" // why doesn't this block???
+        let video = false
+        
+        self.displayIncomingCall(uuid: UUID(), handle:handle , hasVideo:video )
+        
+    }
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
         guard let handle = userActivity.startCallHandle else {
             print("Could not determine start call handle from user activity: \(userActivity)")
@@ -60,7 +63,7 @@ extension AppDelegate :PKPushRegistryDelegate{
     /// Display the incoming call to the user
     func displayIncomingCall(uuid: UUID, handle: String, hasVideo: Bool = false, completion: ((NSError?) -> Void)? = nil) {
         providerDelegate?.reportIncomingCall(uuid: uuid, handle: handle, hasVideo: hasVideo, completion:  { error in
-            print("error")
+            print("error:",error ?? "")
         })
     }
     

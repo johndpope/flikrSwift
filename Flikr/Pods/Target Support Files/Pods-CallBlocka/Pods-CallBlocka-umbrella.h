@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_FlikrVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_FlikrVersionString[];
+FOUNDATION_EXPORT double Pods_CallBlockaVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_CallBlockaVersionString[];
 
