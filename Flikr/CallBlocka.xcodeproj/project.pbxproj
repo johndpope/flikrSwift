@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B56E40C26C2A35200D299E5 /* Pods_Flikr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C52611C148D3F7EA1D124B /* Pods_Flikr.framework */; };
+		176CA8082192272E00CC7431 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176CA8072192272E00CC7431 /* TutorialViewController.swift */; };
 		17C6AC832191EFC300482704 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6AC822191EFC300482704 /* CallDirectoryHandler.swift */; };
 		17C6AC872191EFC300482704 /* callHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 17C6AC802191EFC300482704 /* callHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		17C6AC922192064F00482704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6AC912192064F00482704 /* AppDelegate.swift */; };
@@ -76,6 +76,7 @@
 
 /* Begin PBXFileReference section */
 		02C52611C148D3F7EA1D124B /* Pods_Flikr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flikr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		176CA8072192272E00CC7431 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		17C6AC802191EFC300482704 /* callHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = callHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C6AC822191EFC300482704 /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
 		17C6AC842191EFC300482704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,7 +140,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B56E40C26C2A35200D299E5 /* Pods_Flikr.framework in Frameworks */,
 				EBA292D467F4CDB381D66BE9 /* Pods_CallBlocka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,7 +229,6 @@
 		83EA5B672183770200FD6A0E /* CallBlocka */ = {
 			isa = PBXGroup;
 			children = (
-				17C6AC9C21920D9900482704 /* Other */,
 				17C6AC902192064F00482704 /* App */,
 				83EA5B6F2183770300FD6A0E /* Assets.xcassets */,
 				83EA5B8D2183787800FD6A0E /* Controller */,
@@ -239,6 +238,7 @@
 				83EA5B742183770300FD6A0E /* Info.plist */,
 				83EA5B712183770300FD6A0E /* LaunchScreen.storyboard */,
 				83EA5B6C2183770200FD6A0E /* Main.storyboard */,
+				17C6AC9C21920D9900482704 /* Other */,
 			);
 			path = CallBlocka;
 			sourceTree = "<group>";
@@ -286,6 +286,7 @@
 				83EA5B8E2183787800FD6A0E /* LandingVC+UITableView.swift */,
 				83EA5B8F2183787800FD6A0E /* MyTabBar.swift */,
 				83EA5B992183787800FD6A0E /* MyTabBar+UITabBarControllerDelegate.swift */,
+				176CA8072192272E00CC7431 /* TutorialViewController.swift */,
 				83EA5B962183787800FD6A0E /* VisualManager.swift */,
 			);
 			path = Controller;
@@ -538,6 +539,7 @@
 				17EB592A2187634700ABA010 /* FeaturedCollectionViewCell.swift in Sources */,
 				83EA5BAB2183787800FD6A0E /* VisualManager.swift in Sources */,
 				83EA5BA42183787800FD6A0E /* LandingVC+UITableView.swift in Sources */,
+				176CA8082192272E00CC7431 /* TutorialViewController.swift in Sources */,
 				17C6AC922192064F00482704 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -743,7 +745,7 @@
 				CODE_SIGN_ENTITLEMENTS = CallBlocka.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KL43C67G5Z;
-				INFOPLIST_FILE = Flikr/Info.plist;
+				INFOPLIST_FILE = CallBlocka/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -764,7 +766,7 @@
 				CODE_SIGN_ENTITLEMENTS = CallBlocka.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KL43C67G5Z;
-				INFOPLIST_FILE = Flikr/Info.plist;
+				INFOPLIST_FILE = CallBlocka/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

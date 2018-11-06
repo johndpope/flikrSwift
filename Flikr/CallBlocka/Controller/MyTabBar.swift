@@ -12,25 +12,6 @@ public enum tabBarTag: Int {
 
 }
 
-class MainTabBarController: UITabBarController {
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        if !UserDefaults.standard.bool(forKey: UserDefaults.tutorialPassedKey) {
-            let vc = UIViewController()
-            self.present(vc, animated: true) {
-                
-            }
-        }
-    }
-    
-    // MARK: - IBActions
-    
-    @IBAction func unwinedSegueDone(_ segue: UIStoryboardSegue) {
-        UserDefaults.standard.set(true, forKey: UserDefaults.tutorialPassedKey)
-    }
-}
 
 
 class MyTabBar: NSObject {
