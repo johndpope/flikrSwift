@@ -30,6 +30,8 @@ class CallManager {
   private(set) var calls = [Call]()
   private let callController = CXCallController()
   
+    
+    // will simulate the green background color that app is in call. 
   func startCall(handle: String, videoEnabled: Bool) {
     let handle = CXHandle(type: .phoneNumber, value: handle)
     let startCallAction = CXStartCallAction(call: UUID(), handle: handle)

@@ -45,7 +45,7 @@ class APIManager {
     func fetchLandingContent(){
         
         // Featured Photo at top 
-        let zooTitle = "Microsoft"
+        let zooTitle = "bad guys"
         searchFlickrForTerm(zooTitle) { (photos, error)  in
             let channel = FlikrChannel(name: zooTitle, photos: photos)
             DM.featuredPhotos = channel.photos
@@ -53,10 +53,10 @@ class APIManager {
         }
         
         
-        let gorillaTitle = "Scam"
-        searchFlickrForTerm(gorillaTitle) { (photos, error)  in
+        let searchTitle = "Scam"
+        searchFlickrForTerm(searchTitle) { (photos, error)  in
 
-            let channel = FlikrChannel(name: gorillaTitle, photos: photos)
+            let channel = FlikrChannel(name: searchTitle, photos: photos)
             DM.flikrChannels.append(channel)
             Notificator.fireNotification(kFlikrLoaded)
         }

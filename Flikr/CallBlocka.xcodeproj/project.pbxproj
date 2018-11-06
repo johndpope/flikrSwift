@@ -13,6 +13,13 @@
 		17C6AC922192064F00482704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6AC912192064F00482704 /* AppDelegate.swift */; };
 		17C6AC97219207C900482704 /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6AC95219207C900482704 /* CallManager.swift */; };
 		17C6AC98219207C900482704 /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6AC96219207C900482704 /* Call.swift */; };
+		17C6AC9B21920D5F00482704 /* ProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6AC9A21920D5F00482704 /* ProviderDelegate.swift */; };
+		17C6AC9E21920D9900482704 /* Ringtone.aif in Resources */ = {isa = PBXBuildFile; fileRef = 17C6AC9D21920D9900482704 /* Ringtone.aif */; };
+		17C6ACA021920DDB00482704 /* SpeakerboxCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6AC9F21920DDB00482704 /* SpeakerboxCall.swift */; };
+		17C6ACA221920DEE00482704 /* SpeakerboxCallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6ACA121920DEE00482704 /* SpeakerboxCallManager.swift */; };
+		17C6ACA421920EAB00482704 /* AppDelegate+Callkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6ACA321920EAB00482704 /* AppDelegate+Callkit.swift */; };
+		17C6ACA62192108900482704 /* NSUserActivity+StartCallConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6ACA52192108800482704 /* NSUserActivity+StartCallConvertible.swift */; };
+		17C6ACA8219210A000482704 /* StartCallConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6ACA7219210A000482704 /* StartCallConvertible.swift */; };
 		17EB592821875CD400ABA010 /* LandingVC+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB592721875CD300ABA010 /* LandingVC+UICollectionView.swift */; };
 		17EB592A2187634700ABA010 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB59292187634700ABA010 /* FeaturedCollectionViewCell.swift */; };
 		83EA5B6E2183770200FD6A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EA5B6C2183770200FD6A0E /* Main.storyboard */; };
@@ -74,6 +81,13 @@
 		17C6AC912192064F00482704 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17C6AC95219207C900482704 /* CallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
 		17C6AC96219207C900482704 /* Call.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
+		17C6AC9A21920D5F00482704 /* ProviderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderDelegate.swift; sourceTree = "<group>"; };
+		17C6AC9D21920D9900482704 /* Ringtone.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ringtone.aif; sourceTree = "<group>"; };
+		17C6AC9F21920DDB00482704 /* SpeakerboxCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerboxCall.swift; sourceTree = "<group>"; };
+		17C6ACA121920DEE00482704 /* SpeakerboxCallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerboxCallManager.swift; sourceTree = "<group>"; };
+		17C6ACA321920EAB00482704 /* AppDelegate+Callkit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Callkit.swift"; sourceTree = "<group>"; };
+		17C6ACA52192108800482704 /* NSUserActivity+StartCallConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+StartCallConvertible.swift"; sourceTree = "<group>"; };
+		17C6ACA7219210A000482704 /* StartCallConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartCallConvertible.swift; sourceTree = "<group>"; };
 		17EB592721875CD300ABA010 /* LandingVC+UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LandingVC+UICollectionView.swift"; sourceTree = "<group>"; };
 		17EB59292187634700ABA010 /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
 		83EA5B652183770200FD6A0E /* CallBlocka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallBlocka.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				17C6AC912192064F00482704 /* AppDelegate.swift */,
+				17C6ACA321920EAB00482704 /* AppDelegate+Callkit.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -145,6 +160,7 @@
 		17C6AC93219207C900482704 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				17C6AC9921920D5F00482704 /* Apple */,
 				17C6AC94219207C900482704 /* Hotline */,
 			);
 			path = External;
@@ -157,6 +173,26 @@
 				17C6AC96219207C900482704 /* Call.swift */,
 			);
 			path = Hotline;
+			sourceTree = "<group>";
+		};
+		17C6AC9921920D5F00482704 /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				17C6ACA7219210A000482704 /* StartCallConvertible.swift */,
+				17C6ACA52192108800482704 /* NSUserActivity+StartCallConvertible.swift */,
+				17C6ACA121920DEE00482704 /* SpeakerboxCallManager.swift */,
+				17C6AC9F21920DDB00482704 /* SpeakerboxCall.swift */,
+				17C6AC9A21920D5F00482704 /* ProviderDelegate.swift */,
+			);
+			path = Apple;
+			sourceTree = "<group>";
+		};
+		17C6AC9C21920D9900482704 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				17C6AC9D21920D9900482704 /* Ringtone.aif */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		83EA5B5C2183770200FD6A0E = {
@@ -183,6 +219,7 @@
 		83EA5B672183770200FD6A0E /* Flikr */ = {
 			isa = PBXGroup;
 			children = (
+				17C6AC9C21920D9900482704 /* Other */,
 				17C6AC902192064F00482704 /* App */,
 				83EA5B6F2183770300FD6A0E /* Assets.xcassets */,
 				83EA5B8D2183787800FD6A0E /* Controller */,
@@ -372,6 +409,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17C6AC9E21920D9900482704 /* Ringtone.aif in Resources */,
 				83EA5B732183770300FD6A0E /* LaunchScreen.storyboard in Resources */,
 				83EA5B702183770300FD6A0E /* Assets.xcassets in Resources */,
 				83EA5B6E2183770200FD6A0E /* Main.storyboard in Resources */,
@@ -457,7 +495,9 @@
 				83EA5BA92183787800FD6A0E /* VideoCollectionViewCell.swift in Sources */,
 				83EA5BA32183787800FD6A0E /* APIManager.swift in Sources */,
 				17C6AC98219207C900482704 /* Call.swift in Sources */,
+				17C6AC9B21920D5F00482704 /* ProviderDelegate.swift in Sources */,
 				83EA5B9C2183787800FD6A0E /* UIWindow+Category.swift in Sources */,
+				17C6ACA62192108900482704 /* NSUserActivity+StartCallConvertible.swift in Sources */,
 				17C6AC97219207C900482704 /* CallManager.swift in Sources */,
 				83EA5B9B2183787800FD6A0E /* Notifications.swift in Sources */,
 				83EA5BA52183787800FD6A0E /* MyTabBar.swift in Sources */,
@@ -467,12 +507,16 @@
 				83EA5BA62183787800FD6A0E /* VideoCollectionViewCell+Snapkit.swift in Sources */,
 				17EB592821875CD400ABA010 /* LandingVC+UICollectionView.swift in Sources */,
 				83EA5BAD2183787800FD6A0E /* DebugView.swift in Sources */,
+				17C6ACA021920DDB00482704 /* SpeakerboxCall.swift in Sources */,
 				83EA5BAC2183787800FD6A0E /* LandingVC.swift in Sources */,
 				83EA5BA82183787800FD6A0E /* HeaderSectionView.swift in Sources */,
 				83EA5B9E2183787800FD6A0E /* ImageView.swift in Sources */,
 				83EA5BA72183787800FD6A0E /* NetworkLandingCell.swift in Sources */,
 				83EA5BA02183787800FD6A0E /* DataManager.swift in Sources */,
+				17C6ACA421920EAB00482704 /* AppDelegate+Callkit.swift in Sources */,
 				83EA5B9D2183787800FD6A0E /* Placeholder.swift in Sources */,
+				17C6ACA221920DEE00482704 /* SpeakerboxCallManager.swift in Sources */,
+				17C6ACA8219210A000482704 /* StartCallConvertible.swift in Sources */,
 				83EA5BA22183787800FD6A0E /* CustomURLCache.swift in Sources */,
 				83EA5BA12183787800FD6A0E /* Models.swift in Sources */,
 				17EB592A2187634700ABA010 /* FeaturedCollectionViewCell.swift in Sources */,

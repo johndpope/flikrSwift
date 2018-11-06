@@ -41,7 +41,10 @@ class DataManager {
     static let shared = DataManager()
     weak var weakWindow: UIWindow?
     weak var weakLandingNC:MyNavigationController?
-    var callManager:CallManager?
+
+
+
+    
     
     var networkChannels: [Channel] = []
     
@@ -49,7 +52,9 @@ class DataManager {
     var flikrChannels: [FlikrChannel] = []
     var featuredPhotos: [Photo] = []
 
-    func populateData(){
+    
+    
+    func initData(){
         
         
         var photos:[MyPhoto] = []
