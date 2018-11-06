@@ -45,7 +45,7 @@ class APIManager {
     func fetchLandingContent(){
         
         // Featured Photo at top 
-        let zooTitle = "bad guys"
+        let zooTitle = "thief"
         searchFlickrForTerm(zooTitle) { (photos, error)  in
             let channel = FlikrChannel(name: zooTitle, photos: photos)
             DM.featuredPhotos = channel.photos
@@ -53,7 +53,7 @@ class APIManager {
         }
         
         
-        let searchTitle = "Scam"
+        let searchTitle = "burgler"
         searchFlickrForTerm(searchTitle) { (photos, error)  in
 
             let channel = FlikrChannel(name: searchTitle, photos: photos)

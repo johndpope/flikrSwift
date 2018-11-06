@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		176CA8082192272E00CC7431 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176CA8072192272E00CC7431 /* TutorialViewController.swift */; };
+		176CA80A219229CB00CC7431 /* Scam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 176CA809219229CB00CC7431 /* Scam.jpg */; };
 		17C6AC832191EFC300482704 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6AC822191EFC300482704 /* CallDirectoryHandler.swift */; };
 		17C6AC872191EFC300482704 /* callHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 17C6AC802191EFC300482704 /* callHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		17C6AC922192064F00482704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6AC912192064F00482704 /* AppDelegate.swift */; };
@@ -77,6 +78,7 @@
 /* Begin PBXFileReference section */
 		02C52611C148D3F7EA1D124B /* Pods_Flikr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flikr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		176CA8072192272E00CC7431 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		176CA809219229CB00CC7431 /* Scam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Scam.jpg; sourceTree = "<group>"; };
 		17C6AC802191EFC300482704 /* callHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = callHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C6AC822191EFC300482704 /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
 		17C6AC842191EFC300482704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 		17C6AC9C21920D9900482704 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				176CA809219229CB00CC7431 /* Scam.jpg */,
 				17C6AC9D21920D9900482704 /* Ringtone.aif */,
 			);
 			path = Other;
@@ -429,6 +432,7 @@
 				17C6ACAA21921D4C00482704 /* README.md in Resources */,
 				83EA5B702183770300FD6A0E /* Assets.xcassets in Resources */,
 				83EA5B6E2183770200FD6A0E /* Main.storyboard in Resources */,
+				176CA80A219229CB00CC7431 /* Scam.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

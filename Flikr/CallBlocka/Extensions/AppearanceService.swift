@@ -87,7 +87,7 @@ final class AppearanceService {
         UINavigationBar.appearance().prefersLargeTitles = true
         UINavigationBar.appearance().largeTitleTextAttributes =
             [NSAttributedStringKey.foregroundColor: UIColor.white,
-             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 30, weight: UIFont.Weight.medium)]
+             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 22, weight: UIFont.Weight.medium)]
         
         // NavigationBar
         let navAppearance = UINavigationBar.appearance()
@@ -95,7 +95,7 @@ final class AppearanceService {
         navAppearance.barTintColor = navBar.barTintColor
         navAppearance.isTranslucent = navBar.isTranslucent
         navAppearance.titleTextAttributes = [
-            NSAttributedStringKey.font : UIFont.systemFont(ofSize: 20, weight: UIFont.Weight.medium),
+            NSAttributedStringKey.font : UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.medium),
             
             NSAttributedStringKey.foregroundColor: UIColor.white,
         ]

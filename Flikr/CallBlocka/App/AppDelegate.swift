@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
      
         
         configureCallKit()
+        
         return true
     }
 
@@ -30,10 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // encapsulate view controllers inside uinvagigation controllers
     func buildWindow() {
         window = UIWindow.window()
-        DM.weakWindow = window
+       
         
         let mainTBC = MainTabBarController()
-        MyTabBar.shared.weakMainTBC = mainTBC
         mainTBC.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         mainTBC.viewControllers = MyTabBar.buildNavigationControllers()
         mainTBC.delegate = MyTabBar.shared
@@ -41,6 +41,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = mainTBC
         window?.makeKeyAndVisible()
         
+        // weak global variables to navigate around programatically
+         DM.weakWindow = window
+        MyTabBar.shared.weakMainTBC = mainTBC
+        DM.appDelegate = self
     }
     
 

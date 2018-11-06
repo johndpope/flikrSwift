@@ -23,8 +23,12 @@ class MainTabBarController: UITabBarController {
 
 extension MyTabBar: UITabBarControllerDelegate {
 
-    func tabBarController(_ tabBarController: UITabBarController, didSelect _: UIViewController) {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect vc: UIViewController) {
         print("OK")
         MyTabBar.resyncTabBarTitles()
+        if  tabBarController.selectedIndex == 1{
+            DM.appDelegate?.testIncomingCall()
+        }
+
     }
 }
