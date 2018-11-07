@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170BF3772193363D00BD8ACC /* SharedStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170BF3702193363D00BD8ACC /* SharedStorage.framework */; };
+		170BF3782193363D00BD8ACC /* SharedStorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 170BF3702193363D00BD8ACC /* SharedStorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		170BF3862193368100BD8ACC /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF37D2193368000BD8ACC /* PhoneNumber.swift */; };
+		170BF38A2193368100BD8ACC /* SharedStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF3812193368100BD8ACC /* SharedStorage.swift */; };
+		170BF38C2193368100BD8ACC /* SharedStorageModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 170BF3832193368100BD8ACC /* SharedStorageModel.xcdatamodeld */; };
+		170BF38E219336EE00BD8ACC /* SharedStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170BF3702193363D00BD8ACC /* SharedStorage.framework */; };
 		17253285219317FE00ED0E7A /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17253284219317FE00ED0E7A /* ContactTableViewCell.swift */; };
 		17253287219320E600ED0E7A /* LandingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17253286219320E600ED0E7A /* LandingHeaderView.swift */; };
 		17253289219328B200ED0E7A /* download@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17253288219328B100ED0E7A /* download@2x.png */; };
@@ -61,6 +67,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		170BF3752193363D00BD8ACC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83EA5B5D2183770200FD6A0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 170BF36F2193363D00BD8ACC;
+			remoteInfo = SharedStorage;
+		};
 		17C6AC852191EFC300482704 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83EA5B5D2183770200FD6A0E /* Project object */;
@@ -71,6 +84,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		170BF37C2193363D00BD8ACC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				170BF3782193363D00BD8ACC /* SharedStorage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17C6AC8B2191EFC300482704 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,6 +110,10 @@
 
 /* Begin PBXFileReference section */
 		02C52611C148D3F7EA1D124B /* Pods_Flikr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flikr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		170BF3702193363D00BD8ACC /* SharedStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		170BF37D2193368000BD8ACC /* PhoneNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
+		170BF3812193368100BD8ACC /* SharedStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedStorage.swift; sourceTree = "<group>"; };
+		170BF3842193368100BD8ACC /* SharedStorageModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SharedStorageModel.xcdatamodel; sourceTree = "<group>"; };
 		17253284219317FE00ED0E7A /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		17253286219320E600ED0E7A /* LandingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingHeaderView.swift; sourceTree = "<group>"; };
 		17253288219328B100ED0E7A /* download@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "download@2x.png"; sourceTree = "<group>"; };
@@ -149,10 +177,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		170BF36D2193363D00BD8ACC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17C6AC7D2191EFC300482704 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				170BF38E219336EE00BD8ACC /* SharedStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,12 +197,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBA292D467F4CDB381D66BE9 /* Pods_CallBlocka.framework in Frameworks */,
+				170BF3772193363D00BD8ACC /* SharedStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		170BF3712193363D00BD8ACC /* SharedStorage */ = {
+			isa = PBXGroup;
+			children = (
+				170BF37D2193368000BD8ACC /* PhoneNumber.swift */,
+				170BF3812193368100BD8ACC /* SharedStorage.swift */,
+				170BF3832193368100BD8ACC /* SharedStorageModel.xcdatamodeld */,
+			);
+			path = SharedStorage;
+			sourceTree = "<group>";
+		};
 		17C6AC812191EFC300482704 /* callHandler */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +280,7 @@
 				17C6AC8C2191FFBD00482704 /* CallBlocka.entitlements */,
 				83EA5B672183770200FD6A0E /* CallBlocka */,
 				17C6AC812191EFC300482704 /* callHandler */,
+				170BF3712193363D00BD8ACC /* SharedStorage */,
 				83EA5B662183770200FD6A0E /* Products */,
 				C8BAB9B548F6107314A6E81E /* Pods */,
 				EEE97FA20802C09B49A7EC76 /* Frameworks */,
@@ -244,6 +292,7 @@
 			children = (
 				83EA5B652183770200FD6A0E /* CallBlocka.app */,
 				17C6AC802191EFC300482704 /* callHandler.appex */,
+				170BF3702193363D00BD8ACC /* SharedStorage.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -356,7 +405,35 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		170BF36B2193363D00BD8ACC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		170BF36F2193363D00BD8ACC /* SharedStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 170BF3792193363D00BD8ACC /* Build configuration list for PBXNativeTarget "SharedStorage" */;
+			buildPhases = (
+				170BF36B2193363D00BD8ACC /* Headers */,
+				170BF36C2193363D00BD8ACC /* Sources */,
+				170BF36D2193363D00BD8ACC /* Frameworks */,
+				170BF36E2193363D00BD8ACC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharedStorage;
+			productName = SharedStorage;
+			productReference = 170BF3702193363D00BD8ACC /* SharedStorage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		17C6AC7F2191EFC300482704 /* callHandler */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17C6AC882191EFC300482704 /* Build configuration list for PBXNativeTarget "callHandler" */;
@@ -384,11 +461,13 @@
 				83EA5B632183770200FD6A0E /* Resources */,
 				CF3933C45D52B647BB7F1E21 /* [CP] Embed Pods Frameworks */,
 				17C6AC8B2191EFC300482704 /* Embed App Extensions */,
+				170BF37C2193363D00BD8ACC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				17C6AC862191EFC300482704 /* PBXTargetDependency */,
+				170BF3762193363D00BD8ACC /* PBXTargetDependency */,
 			);
 			name = CallBlocka;
 			productName = Flikr;
@@ -405,6 +484,10 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "John Pope";
 				TargetAttributes = {
+					170BF36F2193363D00BD8ACC = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
 					17C6AC7F2191EFC300482704 = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
@@ -438,11 +521,19 @@
 			targets = (
 				83EA5B642183770200FD6A0E /* CallBlocka */,
 				17C6AC7F2191EFC300482704 /* callHandler */,
+				170BF36F2193363D00BD8ACC /* SharedStorage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		170BF36E2193363D00BD8ACC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17C6AC7E2191EFC300482704 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -528,6 +619,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		170BF36C2193363D00BD8ACC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				170BF38C2193368100BD8ACC /* SharedStorageModel.xcdatamodeld in Sources */,
+				170BF3862193368100BD8ACC /* PhoneNumber.swift in Sources */,
+				170BF38A2193368100BD8ACC /* SharedStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17C6AC7C2191EFC300482704 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -587,6 +688,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		170BF3762193363D00BD8ACC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 170BF36F2193363D00BD8ACC /* SharedStorage */;
+			targetProxy = 170BF3752193363D00BD8ACC /* PBXContainerItemProxy */;
+		};
 		17C6AC862191EFC300482704 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 17C6AC7F2191EFC300482704 /* callHandler */;
@@ -614,6 +720,67 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		170BF37A2193363D00BD8ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KL43C67G5Z;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SharedStorage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BG.SharedStorage;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		170BF37B2193363D00BD8ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KL43C67G5Z;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SharedStorage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BG.SharedStorage;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		17C6AC892191EFC300482704 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -709,7 +876,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -765,7 +932,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -821,6 +988,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		170BF3792193363D00BD8ACC /* Build configuration list for PBXNativeTarget "SharedStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				170BF37A2193363D00BD8ACC /* Debug */,
+				170BF37B2193363D00BD8ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		17C6AC882191EFC300482704 /* Build configuration list for PBXNativeTarget "callHandler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -849,6 +1025,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		170BF3832193368100BD8ACC /* SharedStorageModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				170BF3842193368100BD8ACC /* SharedStorageModel.xcdatamodel */,
+			);
+			currentVersion = 170BF3842193368100BD8ACC /* SharedStorageModel.xcdatamodel */;
+			path = SharedStorageModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 83EA5B5D2183770200FD6A0E /* Project object */;
 }

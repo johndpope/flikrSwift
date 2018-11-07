@@ -43,27 +43,15 @@ class APIManager {
     // It's possible to eagerly fetch this content before any views appear - so we use lose coupling to broadcast when data comes in
     // optimisations could include reducing number of images to fetch
     func fetchLandingContent(){
-        
-        // Featured Photo at top 
-        let zooTitle = "thief"
-        searchFlickrForTerm(zooTitle) { (photos, error)  in
-            let channel = FlikrChannel(name: zooTitle, photos: photos)
-            DM.featuredPhotos = channel.photos
-            Notificator.fireNotification(kFeaturedLoaded)
-        }
-        
-        
-        let searchTitle = "burgler"
+
+        let searchTitle = "office"
         searchFlickrForTerm(searchTitle) { (photos, error)  in
 
             let channel = FlikrChannel(name: searchTitle, photos: photos)
             DM.flikrChannels.append(channel)
             Notificator.fireNotification(kFlikrLoaded)
         }
- 
-       
-        
-        
+
     }
     
     // Flickr API - https://www.flickr.com/services/apps/create/noncommercial/?

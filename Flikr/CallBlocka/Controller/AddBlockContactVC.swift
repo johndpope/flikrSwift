@@ -1,5 +1,7 @@
 import Foundation
 import Material
+import SharedStorage
+
 
 class AddBlockContactVC: UIViewController ,UITextFieldDelegate{
     
@@ -53,6 +55,14 @@ class AddBlockContactVC: UIViewController ,UITextFieldDelegate{
     }
    @objc  func done(){
         self.navigationController?.popViewController(animated: true)
+        phoneTextField.resignFirstResponder()
+    
+        if (phoneTextField.text != ""){
+            if let number = Int64(phoneTextField.text!){
+                SharedStorage.shared.add(phoneNumber: number, label: "SCAM", isScam: true)
+            }
+        }
+   
     }
     
     private func configureConstraints() {
@@ -75,6 +85,7 @@ class AddBlockContactVC: UIViewController ,UITextFieldDelegate{
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.done()
+  
         return true
     }
 }

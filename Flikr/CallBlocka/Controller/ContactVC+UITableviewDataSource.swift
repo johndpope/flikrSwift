@@ -28,9 +28,7 @@ extension ContactVC {
     
     public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
-//            self.contactArray.remove(at: indexPath.row)
-//            self.myTableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
-//            self.syncUD()
+
         }
     }
 
