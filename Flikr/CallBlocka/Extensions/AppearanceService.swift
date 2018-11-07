@@ -118,7 +118,9 @@ final class AppearanceService {
 
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).textColor = .white
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).font = UIFont.systemFont(ofSize: 20, weight: UIFont.Weight.medium)
-
+        UITextField.appearance().keyboardAppearance = UIKeyboardAppearance.dark
+        
+        
         // UITabBar
         let tabBarAppearance = UITabBar.appearance()
         tabBarAppearance.barTintColor = .clear

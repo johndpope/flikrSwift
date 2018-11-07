@@ -42,7 +42,7 @@ class TutorialViewController:UIViewController{
         headerLabel.textColor = .white
         headerLabel.text = "🕵️‍♂️ How to Enable callBlocka"
         headerLabel.font = UIFont.systemFont(ofSize: 24, weight: UIFont.Weight.bold)
-        headerLabel.textAlignment = .center
+        headerLabel.textAlignment = .left
         
         view.addSubview(titleLabel)
         titleLabel.font = UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.light)
@@ -61,7 +61,7 @@ class TutorialViewController:UIViewController{
             make.height.equalTo(40)
             make.width.equalToSuperview().inset(30)
             make.top.equalToSuperview().offset(32)
-            make.centerX.equalToSuperview()
+            make.left.equalToSuperview().offset(10)
         }
         
         
@@ -69,6 +69,7 @@ class TutorialViewController:UIViewController{
             make.height.equalTo(200)
             make.top.equalTo(headerLabel.snp.bottom)
             make.width.equalToSuperview()
+            make.left.equalToSuperview().offset(10)
         }
         
     }
