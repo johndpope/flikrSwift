@@ -22,7 +22,7 @@ class ContactDetailVC: UIViewController, UITableViewDelegate,UITableViewDataSour
         
      
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        view.backgroundColor = .white
+        view.backgroundColor = .onyx
         view.addSubview(myTableView)
 
         myTableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]

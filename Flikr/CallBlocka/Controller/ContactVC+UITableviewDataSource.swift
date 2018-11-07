@@ -35,9 +35,11 @@ extension ContactVC {
     
     func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("didSelectRowAt")
-        let detailVC = ContactDetailVC()
         let contact = contactArray[indexPath.row]
+        
+        let detailVC = ContactDetailVC()
         detailVC.selectedContact = contact
+        detailVC.title = contact.familyName
         self.navigationController?.pushViewController(detailVC, animated: true)
         
         
