@@ -44,7 +44,7 @@ have performance issues.
 
 
 This project was built on top of another assignment with flickr which incorporates some networking / ui code.
-I kept this in to show off my own code rather than I well I can copy and paste code.
+I kept this in to demonstrate programatically layouts and how code reuse can accelerate building apps.
 
 
 
