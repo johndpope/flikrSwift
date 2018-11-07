@@ -48,3 +48,6 @@ I kept this in to demonstrate programatically layouts and how code reuse can acc
 
 
 
+Any identified calls addAllIdentificationPhoneNumbers will be marked as a suspicious call.
+Scam calls will be silently blocked. The 2nd tab will simulate this UI with audio sounds.
+

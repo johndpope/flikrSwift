@@ -22,7 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         APIManager.shared.fetchLandingContent()
      
         configureCallKit()
-        addScamNumbers()
+        
+        if !UserDefaults.standard.bool(forKey: UserDefaults.addNumbersOnLaunchKey) {
+            addScamNumbers()
+            addSuspiciousCallNumbers()
+        }
         
         return true
     }

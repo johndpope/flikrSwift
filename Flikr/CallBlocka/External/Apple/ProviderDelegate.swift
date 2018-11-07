@@ -31,10 +31,9 @@ final class ProviderDelegate: NSObject, CXProviderDelegate {
         provider.setDelegate(self, queue: nil)
     }
 
-    /// The app's provider configuration, representing its CallKit capabilities
+    /// Here we are going to intercept known calls via CallDirectoryHandler.swift > addAllIdentificationPhoneNumbers
     static var providerConfiguration: CXProviderConfiguration {
-        let localizedName = NSLocalizedString(appDisplayName ?? "", comment: "CallBlocka")
-        let providerConfiguration = CXProviderConfiguration(localizedName: localizedName)
+        let providerConfiguration = CXProviderConfiguration(localizedName: "Suspicious Call")
         providerConfiguration.supportsVideo = true
         providerConfiguration.maximumCallsPerCallGroup = 1
         providerConfiguration.supportedHandleTypes = [.phoneNumber]

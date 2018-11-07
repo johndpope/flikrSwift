@@ -21,8 +21,16 @@ extension AppDelegate :PKPushRegistryDelegate{
         }
     }
     
+    func addSuspiciousCallNumbers(){
+        let allPhoneNumbers = [ 425_950_1212 ]
+        for number in allPhoneNumbers{
+            SharedStorage.shared.add(phoneNumber: Int64(number), label: "Suss", isScam: false)
+        }
+    }
+    
     
     func testIncomingCall(){
+        print("⛳️ INFO: testIncomingCall")
         let handle = "123" // why doesn't this block???
         let video = false
         
