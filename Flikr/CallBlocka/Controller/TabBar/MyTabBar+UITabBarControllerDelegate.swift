@@ -9,7 +9,7 @@ class MainTabBarController: UITabBarController {
         super.viewDidAppear(animated)
         
         if !UserDefaults.standard.bool(forKey: UserDefaults.tutorialPassedKey) {
-            let tutorialVC  = TutorialViewController()
+            let tutorialVC  = TutorialVC()
             let tutorialNC = UINavigationController(rootViewController: tutorialVC)
             self.present(tutorialNC, animated: true) {
                 

@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 import SnapKit
 
-class TutorialViewController:UIViewController{
+class TutorialVC:UIViewController{
     
     let customView = UIView(frame: .zero)
     let titleLabel = UILabel(frame: .zero)

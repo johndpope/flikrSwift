@@ -34,7 +34,7 @@
 		17253287219320E600ED0E7A /* LandingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17253286219320E600ED0E7A /* LandingHeaderView.swift */; };
 		17253289219328B200ED0E7A /* download@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17253288219328B100ED0E7A /* download@2x.png */; };
 		1725328B21932AD500ED0E7A /* AddBlockContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1725328A21932AD500ED0E7A /* AddBlockContactVC.swift */; };
-		176CA8082192272E00CC7431 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176CA8072192272E00CC7431 /* TutorialViewController.swift */; };
+		176CA8082192272E00CC7431 /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176CA8072192272E00CC7431 /* TutorialVC.swift */; };
 		176CA80A219229CB00CC7431 /* Scam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 176CA809219229CB00CC7431 /* Scam.jpg */; };
 		176CA81021922D3000CC7431 /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176CA80C21922D2F00CC7431 /* ContactVC.swift */; };
 		176CA81221922D3000CC7431 /* ContactVC+UITableviewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176CA80E21922D2F00CC7431 /* ContactVC+UITableviewDataSource.swift */; };
@@ -144,7 +144,7 @@
 		17253286219320E600ED0E7A /* LandingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingHeaderView.swift; sourceTree = "<group>"; };
 		17253288219328B100ED0E7A /* download@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "download@2x.png"; sourceTree = "<group>"; };
 		1725328A21932AD500ED0E7A /* AddBlockContactVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBlockContactVC.swift; sourceTree = "<group>"; };
-		176CA8072192272E00CC7431 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		176CA8072192272E00CC7431 /* TutorialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialVC.swift; sourceTree = "<group>"; };
 		176CA809219229CB00CC7431 /* Scam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Scam.jpg; sourceTree = "<group>"; };
 		176CA80C21922D2F00CC7431 /* ContactVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactVC.swift; sourceTree = "<group>"; };
 		176CA80E21922D2F00CC7431 /* ContactVC+UITableviewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactVC+UITableviewDataSource.swift"; sourceTree = "<group>"; };
@@ -406,7 +406,7 @@
 				170BF3AF2193667300BD8ACC /* ScamVC+UI.swift */,
 				170BF3AD21935E5B00BD8ACC /* ScamVC+CoreData.swift */,
 				170BF3A82193580C00BD8ACC /* ScamVC+UITableView.swift */,
-				176CA8072192272E00CC7431 /* TutorialViewController.swift */,
+				176CA8072192272E00CC7431 /* TutorialVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -736,7 +736,7 @@
 				17253287219320E600ED0E7A /* LandingHeaderView.swift in Sources */,
 				1725328B21932AD500ED0E7A /* AddBlockContactVC.swift in Sources */,
 				83EA5BA42183787800FD6A0E /* LandingVC+UITableView.swift in Sources */,
-				176CA8082192272E00CC7431 /* TutorialViewController.swift in Sources */,
+				176CA8082192272E00CC7431 /* TutorialVC.swift in Sources */,
 				17C6AC922192064F00482704 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

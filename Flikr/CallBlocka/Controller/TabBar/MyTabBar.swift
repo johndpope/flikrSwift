@@ -33,7 +33,7 @@ class MyTabBar: NSObject {
         
    
         // 2nd Tab
-        let blankVC = UIViewController()
+        let blankVC = TutorialVC()
         blankVC.title = "Call Me"
         let blankNC = buildNavigationController(vc:blankVC)
         blankNC.tabBarItem = tabBarItem(title: "Call Me", imageName: "PhotoIcon", selectedImageName: "PhotoIcon", tagIndex: tabBarTag.callme.rawValue)
