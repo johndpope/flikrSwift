@@ -20,17 +20,11 @@ class ScamVC: UIViewController {
         title = "Scam Numbers"
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.backgroundColor = .onyx
-        view.addSubview(myTableView)
+       
         
-        myTableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        myTableView.separatorStyle = .none
-        myTableView.register(ContactTableViewCell.self, forCellReuseIdentifier: ContactTableViewCell.ID)
-        myTableView.tableFooterView = UITableViewHeaderFooterView(frame:CGRect(x:0,y:0,width:1,height:footerHeight))
-        myTableView.dataSource = self
-        myTableView.delegate = self
-        myTableView.backgroundColor = .onyx
+        configureUI()
+        configureConstraints()
         
-
         fetchScamNumbers()
         
         // refresh
@@ -42,5 +36,9 @@ class ScamVC: UIViewController {
         myTableView.reloadData()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        myTableView.reloadData()
+    }
 
 }

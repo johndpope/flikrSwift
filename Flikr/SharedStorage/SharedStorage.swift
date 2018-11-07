@@ -32,7 +32,7 @@ final public class SharedStorage {
     
     // MARK: - Public methods
     
-    public func add(phoneNumber: Int64, label: String, isScam: Bool,_ contentFlags: Int16 = 0b00000001) {
+    public func add(phoneNumber: Int64, label: String, isScam: Bool,_ contentFlags: Int16 = 0b00000010) { //0b00000010 - user generated
         let fetchRequest = PhoneNumberEntity.fetchRequest() as NSFetchRequest<PhoneNumberEntity>
         fetchRequest.predicate = NSPredicate(format: "phoneNumber = %lld", phoneNumber)
         
