@@ -11,7 +11,7 @@ extension ScamVC:UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_: UITableView, heightForRowAt _: IndexPath) -> CGFloat {
-        return 80
+        return 44
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -10,7 +10,7 @@ extension ScamVC {
         view.addSubview(myTableView)
         
         myTableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        myTableView.separatorStyle = .none
+        myTableView.separatorStyle = .singleLine
         myTableView.register(ScamPhoneNumberCell.self, forCellReuseIdentifier: ScamPhoneNumberCell.ID)
         myTableView.dataSource = self
         myTableView.delegate = self
