@@ -16,4 +16,5 @@ target 'CallBlocka' do
    pod 'CodableAlamofire'
    pod 'SDWebImage'
 
+   pod 'LumberjackConsole'
 end

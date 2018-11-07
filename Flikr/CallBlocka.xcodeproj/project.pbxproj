@@ -23,6 +23,11 @@
 		170BF3A121934D3D00BD8ACC /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF39E21934D3D00BD8ACC /* DebugView.swift */; };
 		170BF3A221934D3D00BD8ACC /* ContactDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF39F21934D3D00BD8ACC /* ContactDetailVC.swift */; };
 		170BF3A421934EDD00BD8ACC /* AppDelegate+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF3A321934EDD00BD8ACC /* AppDelegate+UI.swift */; };
+		170BF3A62193540100BD8ACC /* VisualManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF3A52193540100BD8ACC /* VisualManager.swift */; };
+		170BF3A92193580C00BD8ACC /* ScamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF3A72193580C00BD8ACC /* ScamVC.swift */; };
+		170BF3AA2193580C00BD8ACC /* ScamVC+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF3A82193580C00BD8ACC /* ScamVC+UITableView.swift */; };
+		170BF3AC21935D9B00BD8ACC /* ScamPhoneNumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF3AB21935D9B00BD8ACC /* ScamPhoneNumberCell.swift */; };
+		170BF3AE21935E5B00BD8ACC /* ScamVC+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF3AD21935E5B00BD8ACC /* ScamVC+CoreData.swift */; };
 		17253285219317FE00ED0E7A /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17253284219317FE00ED0E7A /* ContactTableViewCell.swift */; };
 		17253287219320E600ED0E7A /* LandingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17253286219320E600ED0E7A /* LandingHeaderView.swift */; };
 		17253289219328B200ED0E7A /* download@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17253288219328B100ED0E7A /* download@2x.png */; };
@@ -64,7 +69,6 @@
 		83EA5BA42183787800FD6A0E /* LandingVC+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B8E2183787800FD6A0E /* LandingVC+UITableView.swift */; };
 		83EA5BA72183787800FD6A0E /* NetworkLandingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B922183787800FD6A0E /* NetworkLandingCell.swift */; };
 		83EA5BA82183787800FD6A0E /* HeaderSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B932183787800FD6A0E /* HeaderSectionView.swift */; };
-		83EA5BAB2183787800FD6A0E /* VisualManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B962183787800FD6A0E /* VisualManager.swift */; };
 		83EA5BAC2183787800FD6A0E /* LandingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B972183787800FD6A0E /* LandingVC.swift */; };
 		EBA292D467F4CDB381D66BE9 /* Pods_CallBlocka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40E4A493B5EE1311C591A2F /* Pods_CallBlocka.framework */; };
 /* End PBXBuildFile section */
@@ -127,6 +131,11 @@
 		170BF39E21934D3D00BD8ACC /* DebugView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 		170BF39F21934D3D00BD8ACC /* ContactDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailVC.swift; sourceTree = "<group>"; };
 		170BF3A321934EDD00BD8ACC /* AppDelegate+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+UI.swift"; sourceTree = "<group>"; };
+		170BF3A52193540100BD8ACC /* VisualManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualManager.swift; sourceTree = "<group>"; };
+		170BF3A72193580C00BD8ACC /* ScamVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScamVC.swift; sourceTree = "<group>"; };
+		170BF3A82193580C00BD8ACC /* ScamVC+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScamVC+UITableView.swift"; sourceTree = "<group>"; };
+		170BF3AB21935D9B00BD8ACC /* ScamPhoneNumberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScamPhoneNumberCell.swift; sourceTree = "<group>"; };
+		170BF3AD21935E5B00BD8ACC /* ScamVC+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScamVC+CoreData.swift"; sourceTree = "<group>"; };
 		17253284219317FE00ED0E7A /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		17253286219320E600ED0E7A /* LandingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingHeaderView.swift; sourceTree = "<group>"; };
 		17253288219328B100ED0E7A /* download@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "download@2x.png"; sourceTree = "<group>"; };
@@ -175,7 +184,6 @@
 		83EA5B8E2183787800FD6A0E /* LandingVC+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LandingVC+UITableView.swift"; sourceTree = "<group>"; };
 		83EA5B922183787800FD6A0E /* NetworkLandingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLandingCell.swift; sourceTree = "<group>"; };
 		83EA5B932183787800FD6A0E /* HeaderSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderSectionView.swift; sourceTree = "<group>"; };
-		83EA5B962183787800FD6A0E /* VisualManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualManager.swift; sourceTree = "<group>"; };
 		83EA5B972183787800FD6A0E /* LandingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingVC.swift; sourceTree = "<group>"; };
 		DDF70901035D9FB05A00CB05 /* Pods-Flikr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flikr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flikr/Pods-Flikr.release.xcconfig"; sourceTree = "<group>"; };
 		F40E4A493B5EE1311C591A2F /* Pods_CallBlocka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CallBlocka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,6 +240,7 @@
 		170BF39C21934D3D00BD8ACC /* Ignore */ = {
 			isa = PBXGroup;
 			children = (
+				170BF3A52193540100BD8ACC /* VisualManager.swift */,
 				170BF39F21934D3D00BD8ACC /* ContactDetailVC.swift */,
 				170BF39D21934D3D00BD8ACC /* ContactDetailVC+UITableviewDataSource.swift */,
 				170BF39E21934D3D00BD8ACC /* DebugView.swift */,
@@ -388,8 +397,10 @@
 				83EA5B972183787800FD6A0E /* LandingVC.swift */,
 				17EB592721875CD300ABA010 /* LandingVC+UICollectionView.swift */,
 				83EA5B8E2183787800FD6A0E /* LandingVC+UITableView.swift */,
+				170BF3A72193580C00BD8ACC /* ScamVC.swift */,
+				170BF3AD21935E5B00BD8ACC /* ScamVC+CoreData.swift */,
+				170BF3A82193580C00BD8ACC /* ScamVC+UITableView.swift */,
 				176CA8072192272E00CC7431 /* TutorialViewController.swift */,
-				83EA5B962183787800FD6A0E /* VisualManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -397,6 +408,7 @@
 		83EA5B902183787800FD6A0E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				170BF3AB21935D9B00BD8ACC /* ScamPhoneNumberCell.swift */,
 				17253284219317FE00ED0E7A /* ContactTableViewCell.swift */,
 				17EB59292187634700ABA010 /* FeaturedCollectionViewCell.swift */,
 				83EA5B932183787800FD6A0E /* HeaderSectionView.swift */,
@@ -619,8 +631,10 @@
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/CodableAlamofire/CodableAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Device/Device.framework",
+				"${BUILT_PRODUCTS_DIR}/LumberjackConsole/LumberjackConsole.framework",
 				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
 				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/NBUCore/NBUCore.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
@@ -632,8 +646,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Device.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LumberjackConsole.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NBUCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
@@ -674,7 +690,10 @@
 				17C6AC98219207C900482704 /* Call.swift in Sources */,
 				17C6AC9B21920D5F00482704 /* ProviderDelegate.swift in Sources */,
 				83EA5B9C2183787800FD6A0E /* UIWindow+Category.swift in Sources */,
+				170BF3AA2193580C00BD8ACC /* ScamVC+UITableView.swift in Sources */,
 				17253285219317FE00ED0E7A /* ContactTableViewCell.swift in Sources */,
+				170BF3AC21935D9B00BD8ACC /* ScamPhoneNumberCell.swift in Sources */,
+				170BF3AE21935E5B00BD8ACC /* ScamVC+CoreData.swift in Sources */,
 				170BF3A221934D3D00BD8ACC /* ContactDetailVC.swift in Sources */,
 				17C6ACA62192108900482704 /* NSUserActivity+StartCallConvertible.swift in Sources */,
 				170BF3A021934D3D00BD8ACC /* ContactDetailVC+UITableviewDataSource.swift in Sources */,
@@ -688,6 +707,7 @@
 				170BF39821934A5B00BD8ACC /* MyTabBar.swift in Sources */,
 				17EB592821875CD400ABA010 /* LandingVC+UICollectionView.swift in Sources */,
 				17C6ACA021920DDB00482704 /* SpeakerboxCall.swift in Sources */,
+				170BF3A62193540100BD8ACC /* VisualManager.swift in Sources */,
 				83EA5BAC2183787800FD6A0E /* LandingVC.swift in Sources */,
 				176CA81021922D3000CC7431 /* ContactVC.swift in Sources */,
 				83EA5BA82183787800FD6A0E /* HeaderSectionView.swift in Sources */,
@@ -698,6 +718,7 @@
 				83EA5B9D2183787800FD6A0E /* Placeholder.swift in Sources */,
 				17C6ACA221920DEE00482704 /* SpeakerboxCallManager.swift in Sources */,
 				17C6ACA8219210A000482704 /* StartCallConvertible.swift in Sources */,
+				170BF3A92193580C00BD8ACC /* ScamVC.swift in Sources */,
 				170BF3A121934D3D00BD8ACC /* DebugView.swift in Sources */,
 				83EA5BA22183787800FD6A0E /* CustomURLCache.swift in Sources */,
 				83EA5BA12183787800FD6A0E /* Models.swift in Sources */,
@@ -706,7 +727,6 @@
 				170BF3922193484700BD8ACC /* VideoCollectionViewCell.swift in Sources */,
 				17253287219320E600ED0E7A /* LandingHeaderView.swift in Sources */,
 				1725328B21932AD500ED0E7A /* AddBlockContactVC.swift in Sources */,
-				83EA5BAB2183787800FD6A0E /* VisualManager.swift in Sources */,
 				83EA5BA42183787800FD6A0E /* LandingVC+UITableView.swift in Sources */,
 				176CA8082192272E00CC7431 /* TutorialViewController.swift in Sources */,
 				17C6AC922192064F00482704 /* AppDelegate.swift in Sources */,

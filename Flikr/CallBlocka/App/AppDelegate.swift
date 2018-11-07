@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
         buildWindow()
+        addDebugConsole()
         configureAppearanceService()
        
         APIManager.shared.fetchLandingContent()

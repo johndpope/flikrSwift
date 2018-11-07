@@ -11,8 +11,7 @@ let DM = DataManager.shared
 let kPlaceholderImage = UIImage(named: "placeholder")
 
 let featuredHeaderHeight:CGFloat = 300
-
-
+let footerHeight:CGFloat = 80
 
 var screenWidth = UIScreen.main.bounds.width
 var screenHeight = UIScreen.main.bounds.height

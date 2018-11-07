@@ -9,7 +9,7 @@ public enum tabBarTag: Int {
     case landing = 0
     case callme = 1
     case addNumber = 2
-    case tutorial = 3
+    case scam = 3
 
 }
 
@@ -48,11 +48,11 @@ class MyTabBar: NSObject {
 
    
         // 4th Tab
-        let tutorialVC = TutorialViewController()
-        let tutorialNC = buildNavigationController(vc:tutorialVC)
-        tutorialNC.tabBarItem = tabBarItem(title: "Tutorial", imageName: "PhotoIcon", selectedImageName: "PhotoIcon", tagIndex: tabBarTag.tutorial.rawValue)
+        let scamVC = ScamVC()
+        let scamNC = buildNavigationController(vc:scamVC)
+        scamNC.tabBarItem = tabBarItem(title: "Scam", imageName: "PhotoIcon", selectedImageName: "PhotoIcon", tagIndex: tabBarTag.scam.rawValue)
 
-        return  [landingNC,blankNC,addNC,tutorialNC]
+        return  [landingNC,blankNC,addNC,scamNC]
     }
 
     
@@ -89,8 +89,8 @@ class MyTabBar: NSObject {
                 if index == tabBarTag.addNumber.rawValue {
                     vc.tabBarItem.title = "Contacts"
                 }
-                if index == tabBarTag.tutorial.rawValue {
-                    vc.tabBarItem.title = "Tutorial"
+                if index == tabBarTag.scam.rawValue {
+                    vc.tabBarItem.title = "Scam"
                 }
                 
             }

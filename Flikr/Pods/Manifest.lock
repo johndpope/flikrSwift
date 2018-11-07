@@ -9,6 +9,9 @@ PODS:
   - CodableAlamofire (1.1.0):
     - Alamofire (~> 4.0)
   - Device (3.0.3)
+  - LumberjackConsole (3.3.1):
+    - CocoaLumberjack (>= 3.x)
+    - NBUCore (>= 2.1.0)
   - Material (2.12.16):
     - Material/Core (= 2.12.16)
   - Material/Core (2.12.16):
@@ -16,6 +19,7 @@ PODS:
   - Motion (1.2.5):
     - Motion/Core (= 1.2.5)
   - Motion/Core (1.2.5)
+  - NBUCore (2.1.0)
   - SDWebImage (4.2.2):
     - SDWebImage/Core (= 4.2.2)
   - SDWebImage/Core (4.2.2)
@@ -26,6 +30,7 @@ DEPENDENCIES:
   - CocoaLumberjack
   - CodableAlamofire
   - Device (~> 3.0.0)
+  - LumberjackConsole
   - Material
   - SDWebImage
   - SnapKit (~> 4.0.0)
@@ -36,8 +41,10 @@ SPEC REPOS:
     - CocoaLumberjack
     - CodableAlamofire
     - Device
+    - LumberjackConsole
     - Material
     - Motion
+    - NBUCore
     - SDWebImage
     - SnapKit
 
@@ -46,11 +53,13 @@ SPEC CHECKSUMS:
   CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
   CodableAlamofire: e2d2edcec7cf413f7862c30c8fa98eded27a83f9
   Device: 9a5264ee4e0f392e7153d2c46b10c8df46b7aad2
+  LumberjackConsole: c5fcf48e08da5313d060225901737496cf9140ca
   Material: 00fdeb39f5d97dc19f09b160e8b95c47e2ed708d
   Motion: 88a8bee21926af792333f4b9e7170f710e9e48f3
+  NBUCore: 201af50441f48513ef6d5823a5fc12c9e1f288cd
   SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 0838eaab01452775c1cef19189aefcf21fc38444
+PODFILE CHECKSUM: c7f54d191db2ff168a922c3f68bc74635081b856
 
 COCOAPODS: 1.5.3

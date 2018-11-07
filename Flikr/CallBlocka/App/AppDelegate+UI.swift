@@ -3,7 +3,10 @@ import UIKit
 import CallKit
 import PushKit
 import SharedStorage
+import LumberjackConsole
+import CocoaLumberjack
 
+public var defaultDebugLevel = DDLogLevel.verbose
 
 extension AppDelegate {
    
@@ -27,11 +30,18 @@ extension AppDelegate {
         DM.appDelegate = self
     }
     
+    func addDebugConsole(){
+        print("⛳️ INFO: add debug console")
+        DDLog.add(DDTTYLogger.sharedInstance, with: defaultDebugLevel) // TTY = Xcode console
+        DDLog.add(DDASLLogger.sharedInstance, with: defaultDebugLevel) // ASL = Apple System Logs
+        defaultDebugLevel = DDLogLevel.verbose
+        PTEDashboard.shared().show()
+    }
     
     
     // Used to configure all uiview colors / fonts etc
     func configureAppearanceService() {
-        print("Enabling AppearanceService proxy")
+        print("⛳️ INFO: Enabling AppearanceService proxy")
         AppearanceService.shared.setGlobalAppearance()
     }
 }

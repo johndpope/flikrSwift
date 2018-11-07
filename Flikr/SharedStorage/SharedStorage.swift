@@ -42,11 +42,13 @@ final public class SharedStorage {
                 existingNumber.contentFlags = contentFlags
             }
             else {
-                let entity = NSEntityDescription.insertNewObject(forEntityName: "PhoneNumberEntity", into: moc) as! PhoneNumberEntity
-                entity.phoneNumber = phoneNumber
-                entity.label = label
-                entity.isScam = isScam
-                entity.contentFlags = contentFlags
+                if let entity = NSEntityDescription.insertNewObject(forEntityName: "PhoneNumberEntity", into: moc) as? PhoneNumberEntity{
+                    entity.phoneNumber = phoneNumber
+                    entity.label = label
+                    entity.isScam = isScam
+                    entity.contentFlags = contentFlags
+                }
+            
             }
             
             try moc.save()

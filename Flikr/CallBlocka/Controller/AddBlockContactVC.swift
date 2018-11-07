@@ -19,11 +19,7 @@ class AddBlockContactVC: UIViewController ,UITextFieldDelegate{
         configureConstraints()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        UIApplication.statusBarBackgroundColor = UIColor.black
-    }
-    
+
     
     //MARK: UI
     private func configureUI(){
@@ -53,14 +49,9 @@ class AddBlockContactVC: UIViewController ,UITextFieldDelegate{
         self.navigationItem.rightBarButtonItem = navItem
     
     }
-   @objc  func done(){
-        addNumberAndRefreshContext()
-        self.navigationController?.popViewController(animated: true)
+
     
-   
-    }
-    
-    
+    //MARK: - Snapkit Constraints
     private func configureConstraints() {
         
         headerLabel.snp.remakeConstraints { (make) -> Void in
@@ -77,6 +68,11 @@ class AddBlockContactVC: UIViewController ,UITextFieldDelegate{
             make.width.centerX.equalToSuperview()
         }
         
+    }
+    
+    @objc  func done(){
+        addNumberAndRefreshContext()
+        self.navigationController?.popViewController(animated: true)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

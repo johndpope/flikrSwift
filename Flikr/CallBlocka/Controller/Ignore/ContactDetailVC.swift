@@ -6,7 +6,6 @@ import Contacts
 class ContactDetailVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
     var selectedIndex:Int = 0
-    let footerHeight:CGFloat = 80
     let cellLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
     lazy var myTableView: UITableView = {
         let tb = UITableView(frame: .zero, style: .grouped)
