@@ -25,7 +25,7 @@ class ContactVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         
         title = "Contacts"
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        view.backgroundColor = .white
+        view.backgroundColor = .onyx
         view.addSubview(myTableView)
 
         myTableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -34,20 +34,16 @@ class ContactVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         myTableView.tableFooterView = UITableViewHeaderFooterView(frame:CGRect(x:0,y:0,width:1,height:footerHeight))
         myTableView.dataSource = self
         myTableView.delegate = self
-        
+        myTableView.backgroundColor = .onyx
         reloadTableView()
         configureConstraints()
-        
-
-
         }
     
 
     
     @objc func addBlockedContact(){
         
-       let vc = UIViewController()
-        vc.title = "Add Custom Number to block"
+       let vc = AddBlockContactVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

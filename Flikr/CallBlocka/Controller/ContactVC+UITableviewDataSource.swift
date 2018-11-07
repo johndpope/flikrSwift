@@ -28,8 +28,8 @@ extension ContactVC {
     
     public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
-            self.contactArray.remove(at: indexPath.row)
-            self.myTableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+//            self.contactArray.remove(at: indexPath.row)
+//            self.myTableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
 //            self.syncUD()
         }
     }
@@ -57,7 +57,7 @@ extension ContactVC {
 
     
     func tableView(_: UITableView, heightForHeaderInSection _: Int) -> CGFloat {
-        return 60
+        return 0
     }
     
     

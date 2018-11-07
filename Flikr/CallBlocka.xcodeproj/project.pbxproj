@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		17253285219317FE00ED0E7A /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17253284219317FE00ED0E7A /* ContactTableViewCell.swift */; };
 		17253287219320E600ED0E7A /* LandingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17253286219320E600ED0E7A /* LandingHeaderView.swift */; };
+		17253289219328B200ED0E7A /* download@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17253288219328B100ED0E7A /* download@2x.png */; };
+		1725328B21932AD500ED0E7A /* AddBlockContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1725328A21932AD500ED0E7A /* AddBlockContactVC.swift */; };
 		176CA8082192272E00CC7431 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176CA8072192272E00CC7431 /* TutorialViewController.swift */; };
 		176CA80A219229CB00CC7431 /* Scam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 176CA809219229CB00CC7431 /* Scam.jpg */; };
 		176CA80F21922D3000CC7431 /* ContactDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176CA80B21922D2F00CC7431 /* ContactDetailVC.swift */; };
@@ -86,6 +88,8 @@
 		02C52611C148D3F7EA1D124B /* Pods_Flikr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flikr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17253284219317FE00ED0E7A /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		17253286219320E600ED0E7A /* LandingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingHeaderView.swift; sourceTree = "<group>"; };
+		17253288219328B100ED0E7A /* download@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "download@2x.png"; sourceTree = "<group>"; };
+		1725328A21932AD500ED0E7A /* AddBlockContactVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBlockContactVC.swift; sourceTree = "<group>"; };
 		176CA8072192272E00CC7431 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		176CA809219229CB00CC7431 /* Scam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Scam.jpg; sourceTree = "<group>"; };
 		176CA80B21922D2F00CC7431 /* ContactDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailVC.swift; sourceTree = "<group>"; };
@@ -215,6 +219,7 @@
 		17C6AC9C21920D9900482704 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				17253288219328B100ED0E7A /* download@2x.png */,
 				176CA809219229CB00CC7431 /* Scam.jpg */,
 				17C6AC9D21920D9900482704 /* Ringtone.aif */,
 			);
@@ -297,6 +302,7 @@
 		83EA5B8D2183787800FD6A0E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1725328A21932AD500ED0E7A /* AddBlockContactVC.swift */,
 				83EA5B902183787800FD6A0E /* Cells */,
 				83EA5B982183787800FD6A0E /* DebugView.swift */,
 				83EA5B972183787800FD6A0E /* LandingVC.swift */,
@@ -452,6 +458,7 @@
 				83EA5B732183770300FD6A0E /* LaunchScreen.storyboard in Resources */,
 				17C6ACAA21921D4C00482704 /* README.md in Resources */,
 				83EA5B702183770300FD6A0E /* Assets.xcassets in Resources */,
+				17253289219328B200ED0E7A /* download@2x.png in Resources */,
 				83EA5B6E2183770200FD6A0E /* Main.storyboard in Resources */,
 				176CA80A219229CB00CC7431 /* Scam.jpg in Resources */,
 			);
@@ -569,6 +576,7 @@
 				83EA5BA12183787800FD6A0E /* Models.swift in Sources */,
 				17EB592A2187634700ABA010 /* FeaturedCollectionViewCell.swift in Sources */,
 				17253287219320E600ED0E7A /* LandingHeaderView.swift in Sources */,
+				1725328B21932AD500ED0E7A /* AddBlockContactVC.swift in Sources */,
 				83EA5BAB2183787800FD6A0E /* VisualManager.swift in Sources */,
 				83EA5BA42183787800FD6A0E /* LandingVC+UITableView.swift in Sources */,
 				176CA8082192272E00CC7431 /* TutorialViewController.swift in Sources */,

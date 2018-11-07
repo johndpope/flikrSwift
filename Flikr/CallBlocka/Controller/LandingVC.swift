@@ -7,12 +7,12 @@ class LandingVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
     var selectedIndex:Int = 0
     let footerHeight:CGFloat = 80
-    let cellLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+
     lazy var myTableView: UITableView = {
         let tb = UITableView(frame: .zero, style: .grouped)
         return tb
     }()
-    var headerCV:UICollectionView!
+   
     
     var featuredTableHeader = FeaturedTableViewHeader()
 
@@ -32,7 +32,7 @@ class LandingVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         myTableView.dataSource = self
         myTableView.delegate = self
 
-  
+        configureHeader()
         reloadTableView()
         configureConstraints()
         addListeners()
@@ -40,12 +40,11 @@ class LandingVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
     
     // Featured Header image
-    func addHeaderView(){
-      
-        myTableView.tableHeaderView = featuredTableHeader
+    func configureHeader(){
+
         let photo = MyPhoto(id: 1, title: "Phone Scammers", photoDescription: "", thumbURL: "https://www.accountingweb.com/sites/default/files/styles/banner/public/phone_scam_fatihhoca.jpg?itok=ZAjH8_iD")
         featuredTableHeader.configureHeader(photo: photo)
-        
+        myTableView.tableHeaderView = featuredTableHeader
     }
     
     

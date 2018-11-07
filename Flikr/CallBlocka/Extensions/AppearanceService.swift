@@ -102,7 +102,7 @@ final class AppearanceService {
 
         // Switch
          let switchAppearance = UISwitch.appearance()
-        switchAppearance.onTintColor = UIColor.governorBay
+        switchAppearance.onTintColor = UIColor.fireEngineRed
         switchAppearance.thumbTintColor = .white
         switchAppearance.backgroundColor = UIColor.grayChateau
         switchAppearance.tintColor = UIColor.grayChateau
@@ -112,7 +112,7 @@ final class AppearanceService {
         // Text fields
         let searchAppearance = UISearchBar.appearance()
         searchAppearance.backgroundColor = UIColor.blackButtonColor
-        searchAppearance.tintColor = UIColor.governorBay
+        searchAppearance.tintColor = UIColor.fireEngineRed
         searchAppearance.barTintColor = .white
         searchAppearance.searchBarStyle = .minimal
 
@@ -122,7 +122,7 @@ final class AppearanceService {
         // UITabBar
         let tabBarAppearance = UITabBar.appearance()
         tabBarAppearance.barTintColor = .clear
-        tabBarAppearance.tintColor = .governorBay
+        tabBarAppearance.tintColor = .fireEngineRed
         tabBarAppearance.isTranslucent = tabBar.isTranslucent
         
         UITabBarItem.appearance().setTitleTextAttributes([
@@ -174,7 +174,7 @@ final class AppearanceService {
 
     // TODO - iphone X sits the red line too far down.
     func redlineImageWithColorPosition() -> UIImage {
-        let color = UIColor.governorBay
+        let color = UIColor.fireEngineRed
         let lineSize = CGSize(width: currentSize.width / 5, height: 2)
         let size = CGSize(width: currentSize.width / 5, height: 49)
         let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)

@@ -103,7 +103,7 @@ class ContactTableViewCell: TableViewCell {
         if let data = item.imageData{
             heroImageView.image = UIImage(data: data,scale:1.0)
         }else{
-            heroImageView.image = nil
+            heroImageView.image = UIImage(named: "")
         }
         
     }
