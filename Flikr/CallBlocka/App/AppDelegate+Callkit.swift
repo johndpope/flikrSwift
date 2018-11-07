@@ -67,5 +67,25 @@ extension AppDelegate :PKPushRegistryDelegate{
         })
     }
     
+    
+    public func promptUserForContactAccess() {
+        
+        let alert = UIAlertController(title: "Access to contacts.",
+                                      message: "This app requires access to your contacts",
+                                      preferredStyle: UIAlertControllerStyle.alert)
+        
+        let cancelAction = UIAlertAction(title: "Cancel",
+                                         style: .cancel, handler: nil)
+        alert.addAction(cancelAction)
+        
+        let settingsAction = UIAlertAction(title: "Go to Settings", style: .default) { (UIAlertAction) in
+            UIApplication.shared.open(NSURL.init(string: UIApplicationOpenSettingsURLString)! as URL, options: [:], completionHandler: nil)
+        }
+        alert.addAction(settingsAction)
+        
+        self.window?.rootViewController?.present(alert, animated: true) {
+            
+        }
+    }
 }
 

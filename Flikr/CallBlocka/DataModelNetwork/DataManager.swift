@@ -1,6 +1,6 @@
 import UIKit
 import Alamofire
-
+import Contacts
 
 
 
@@ -42,11 +42,21 @@ class DataManager {
     weak var weakWindow: UIWindow?
     weak var appDelegate:AppDelegate?
     weak var weakLandingNC:MyNavigationController?
-    
+    weak var contactStore:CNContactStore?
 
     var networkChannels: [Channel] = []
     var flikrChannels: [FlikrChannel] = []
     var featuredPhotos: [Photo] = []
+    var contacts: [CNContact] = []
 
+}
 
+public struct Contact:Decodable{
+    
+    var id: Int
+    var title: String
+    var firstName:String
+    var photoDescription: String
+    var thumbURL: String
+    
 }

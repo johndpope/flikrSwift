@@ -25,6 +25,11 @@ class TutorialViewController:UIViewController{
         
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+          MyTabBar.resyncTabBarTitles() // fixes a bug where tab bar title is eroneously updated
+        
+    }
     
     @objc func dismissWindow(){
         UserDefaults.standard.set(true, forKey: UserDefaults.tutorialPassedKey)
