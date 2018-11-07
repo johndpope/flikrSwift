@@ -40,14 +40,6 @@ class ContactVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         }
     
 
-    
-    @objc func addBlockedContact(){
-        
-       let vc = AddBlockContactVC()
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-
     @objc func dataLoaded(){
         myTableView.reloadData()
         
@@ -74,7 +66,11 @@ class ContactVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         self.navigationItem.rightBarButtonItem = navItem
     }
     
-    
+    @objc func addBlockedContact(){
+        
+        let vc = AddBlockContactVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     func reloadTableView() {
         myTableView.reloadData()

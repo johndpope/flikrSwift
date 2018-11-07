@@ -27,9 +27,19 @@ class ScamVC: UIViewController {
         
         fetchScamNumbers()
         
-        // refresh
-        let navItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(reloadTableView))
-        self.navigationItem.rightBarButtonItem = navItem
+        // Refresh button item
+        let refreshItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(reloadTableView))
+        self.navigationItem.leftBarButtonItem  = refreshItem
+        
+        
+        // Add scam caller
+        let addItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addBlockedContact))
+        self.navigationItem.rightBarButtonItem = addItem
+    }
+    
+    @objc func addBlockedContact(){
+        let vc = AddBlockContactVC()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
     @objc func reloadTableView() {
