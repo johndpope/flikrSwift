@@ -54,16 +54,12 @@ class AddBlockContactVC: UIViewController ,UITextFieldDelegate{
     
     }
    @objc  func done(){
+        addNumberAndRefreshContext()
         self.navigationController?.popViewController(animated: true)
-        phoneTextField.resignFirstResponder()
     
-        if (phoneTextField.text != ""){
-            if let number = Int64(phoneTextField.text!){
-                SharedStorage.shared.add(phoneNumber: number, label: "SCAM", isScam: true)
-            }
-        }
    
     }
+    
     
     private func configureConstraints() {
         

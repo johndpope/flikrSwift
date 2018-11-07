@@ -30,8 +30,8 @@ class ContactDetailVC: UIViewController, UITableViewDelegate,UITableViewDataSour
         myTableView.dataSource = self
         myTableView.delegate = self
         
+        self.title = "Under construction"
 
-//        configureConstraints()
         }
     
     

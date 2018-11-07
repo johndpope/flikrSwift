@@ -36,7 +36,7 @@ class MyTabBar: NSObject {
         let blankVC = UIViewController()
         blankVC.title = "Call Me"
         let blankNC = buildNavigationController(vc:blankVC)
-        blankNC.tabBarItem = tabBarItem(title: "Apple", imageName: "AppleIcon", selectedImageName: "AppleIcon", tagIndex: tabBarTag.callme.rawValue)
+        blankNC.tabBarItem = tabBarItem(title: "Call Me", imageName: "PhotoIcon", selectedImageName: "PhotoIcon", tagIndex: tabBarTag.callme.rawValue)
 
         
         
@@ -44,13 +44,13 @@ class MyTabBar: NSObject {
         let addVC = ContactVC()
         addVC.title = "Contacts"
         let addNC = buildNavigationController(vc:addVC)
-        addNC.tabBarItem = tabBarItem(title: "Contacts", imageName: "AppleIcon", selectedImageName: "AppleIcon", tagIndex: tabBarTag.addNumber.rawValue)
+        addNC.tabBarItem = tabBarItem(title: "Contacts", imageName: "PhotoIcon", selectedImageName: "PhotoIcon", tagIndex: tabBarTag.addNumber.rawValue)
 
    
         // 4th Tab
         let tutorialVC = TutorialViewController()
         let tutorialNC = buildNavigationController(vc:tutorialVC)
-        tutorialNC.tabBarItem = tabBarItem(title: "Tutorial", imageName: "AppleIcon", selectedImageName: "AppleIcon", tagIndex: tabBarTag.tutorial.rawValue)
+        tutorialNC.tabBarItem = tabBarItem(title: "Tutorial", imageName: "PhotoIcon", selectedImageName: "PhotoIcon", tagIndex: tabBarTag.tutorial.rawValue)
 
         return  [landingNC,blankNC,addNC,tutorialNC]
     }

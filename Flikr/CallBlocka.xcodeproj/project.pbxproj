@@ -16,15 +16,20 @@
 		170BF3912193484700BD8ACC /* VideoCollectionViewCell+Snapkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF38F2193484600BD8ACC /* VideoCollectionViewCell+Snapkit.swift */; };
 		170BF3922193484700BD8ACC /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF3902193484700BD8ACC /* VideoCollectionViewCell.swift */; };
 		170BF3942193489200BD8ACC /* dna@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 170BF3932193489200BD8ACC /* dna@2x.png */; };
+		170BF39821934A5B00BD8ACC /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF39621934A5B00BD8ACC /* MyTabBar.swift */; };
+		170BF39921934A5B00BD8ACC /* MyTabBar+UITabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF39721934A5B00BD8ACC /* MyTabBar+UITabBarControllerDelegate.swift */; };
+		170BF39B21934C6900BD8ACC /* AddBlockContactVC+CallKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF39A21934C6900BD8ACC /* AddBlockContactVC+CallKit.swift */; };
+		170BF3A021934D3D00BD8ACC /* ContactDetailVC+UITableviewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF39D21934D3D00BD8ACC /* ContactDetailVC+UITableviewDataSource.swift */; };
+		170BF3A121934D3D00BD8ACC /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF39E21934D3D00BD8ACC /* DebugView.swift */; };
+		170BF3A221934D3D00BD8ACC /* ContactDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF39F21934D3D00BD8ACC /* ContactDetailVC.swift */; };
+		170BF3A421934EDD00BD8ACC /* AppDelegate+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BF3A321934EDD00BD8ACC /* AppDelegate+UI.swift */; };
 		17253285219317FE00ED0E7A /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17253284219317FE00ED0E7A /* ContactTableViewCell.swift */; };
 		17253287219320E600ED0E7A /* LandingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17253286219320E600ED0E7A /* LandingHeaderView.swift */; };
 		17253289219328B200ED0E7A /* download@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17253288219328B100ED0E7A /* download@2x.png */; };
 		1725328B21932AD500ED0E7A /* AddBlockContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1725328A21932AD500ED0E7A /* AddBlockContactVC.swift */; };
 		176CA8082192272E00CC7431 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176CA8072192272E00CC7431 /* TutorialViewController.swift */; };
 		176CA80A219229CB00CC7431 /* Scam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 176CA809219229CB00CC7431 /* Scam.jpg */; };
-		176CA80F21922D3000CC7431 /* ContactDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176CA80B21922D2F00CC7431 /* ContactDetailVC.swift */; };
 		176CA81021922D3000CC7431 /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176CA80C21922D2F00CC7431 /* ContactVC.swift */; };
-		176CA81121922D3000CC7431 /* ContactDetailVC+UITableviewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176CA80D21922D2F00CC7431 /* ContactDetailVC+UITableviewDataSource.swift */; };
 		176CA81221922D3000CC7431 /* ContactVC+UITableviewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176CA80E21922D2F00CC7431 /* ContactVC+UITableviewDataSource.swift */; };
 		176CA81421922F5700CC7431 /* DataManager+Callkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176CA81321922F5700CC7431 /* DataManager+Callkit.swift */; };
 		17C6AC832191EFC300482704 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6AC822191EFC300482704 /* CallDirectoryHandler.swift */; };
@@ -57,13 +62,10 @@
 		83EA5BA22183787800FD6A0E /* CustomURLCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B8B2183787800FD6A0E /* CustomURLCache.swift */; };
 		83EA5BA32183787800FD6A0E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B8C2183787800FD6A0E /* APIManager.swift */; };
 		83EA5BA42183787800FD6A0E /* LandingVC+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B8E2183787800FD6A0E /* LandingVC+UITableView.swift */; };
-		83EA5BA52183787800FD6A0E /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B8F2183787800FD6A0E /* MyTabBar.swift */; };
 		83EA5BA72183787800FD6A0E /* NetworkLandingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B922183787800FD6A0E /* NetworkLandingCell.swift */; };
 		83EA5BA82183787800FD6A0E /* HeaderSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B932183787800FD6A0E /* HeaderSectionView.swift */; };
 		83EA5BAB2183787800FD6A0E /* VisualManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B962183787800FD6A0E /* VisualManager.swift */; };
 		83EA5BAC2183787800FD6A0E /* LandingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B972183787800FD6A0E /* LandingVC.swift */; };
-		83EA5BAD2183787800FD6A0E /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B982183787800FD6A0E /* DebugView.swift */; };
-		83EA5BAE2183787800FD6A0E /* MyTabBar+UITabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B992183787800FD6A0E /* MyTabBar+UITabBarControllerDelegate.swift */; };
 		EBA292D467F4CDB381D66BE9 /* Pods_CallBlocka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40E4A493B5EE1311C591A2F /* Pods_CallBlocka.framework */; };
 /* End PBXBuildFile section */
 
@@ -118,15 +120,20 @@
 		170BF38F2193484600BD8ACC /* VideoCollectionViewCell+Snapkit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VideoCollectionViewCell+Snapkit.swift"; sourceTree = "<group>"; };
 		170BF3902193484700BD8ACC /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		170BF3932193489200BD8ACC /* dna@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dna@2x.png"; sourceTree = "<group>"; };
+		170BF39621934A5B00BD8ACC /* MyTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
+		170BF39721934A5B00BD8ACC /* MyTabBar+UITabBarControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MyTabBar+UITabBarControllerDelegate.swift"; sourceTree = "<group>"; };
+		170BF39A21934C6900BD8ACC /* AddBlockContactVC+CallKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddBlockContactVC+CallKit.swift"; sourceTree = "<group>"; };
+		170BF39D21934D3D00BD8ACC /* ContactDetailVC+UITableviewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactDetailVC+UITableviewDataSource.swift"; sourceTree = "<group>"; };
+		170BF39E21934D3D00BD8ACC /* DebugView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
+		170BF39F21934D3D00BD8ACC /* ContactDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailVC.swift; sourceTree = "<group>"; };
+		170BF3A321934EDD00BD8ACC /* AppDelegate+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+UI.swift"; sourceTree = "<group>"; };
 		17253284219317FE00ED0E7A /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		17253286219320E600ED0E7A /* LandingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingHeaderView.swift; sourceTree = "<group>"; };
 		17253288219328B100ED0E7A /* download@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "download@2x.png"; sourceTree = "<group>"; };
 		1725328A21932AD500ED0E7A /* AddBlockContactVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBlockContactVC.swift; sourceTree = "<group>"; };
 		176CA8072192272E00CC7431 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		176CA809219229CB00CC7431 /* Scam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Scam.jpg; sourceTree = "<group>"; };
-		176CA80B21922D2F00CC7431 /* ContactDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailVC.swift; sourceTree = "<group>"; };
 		176CA80C21922D2F00CC7431 /* ContactVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactVC.swift; sourceTree = "<group>"; };
-		176CA80D21922D2F00CC7431 /* ContactDetailVC+UITableviewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactDetailVC+UITableviewDataSource.swift"; sourceTree = "<group>"; };
 		176CA80E21922D2F00CC7431 /* ContactVC+UITableviewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactVC+UITableviewDataSource.swift"; sourceTree = "<group>"; };
 		176CA81321922F5700CC7431 /* DataManager+Callkit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataManager+Callkit.swift"; sourceTree = "<group>"; };
 		17C6AC802191EFC300482704 /* callHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = callHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,13 +173,10 @@
 		83EA5B8B2183787800FD6A0E /* CustomURLCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomURLCache.swift; sourceTree = "<group>"; };
 		83EA5B8C2183787800FD6A0E /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		83EA5B8E2183787800FD6A0E /* LandingVC+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LandingVC+UITableView.swift"; sourceTree = "<group>"; };
-		83EA5B8F2183787800FD6A0E /* MyTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
 		83EA5B922183787800FD6A0E /* NetworkLandingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLandingCell.swift; sourceTree = "<group>"; };
 		83EA5B932183787800FD6A0E /* HeaderSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderSectionView.swift; sourceTree = "<group>"; };
 		83EA5B962183787800FD6A0E /* VisualManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualManager.swift; sourceTree = "<group>"; };
 		83EA5B972183787800FD6A0E /* LandingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingVC.swift; sourceTree = "<group>"; };
-		83EA5B982183787800FD6A0E /* DebugView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
-		83EA5B992183787800FD6A0E /* MyTabBar+UITabBarControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MyTabBar+UITabBarControllerDelegate.swift"; sourceTree = "<group>"; };
 		DDF70901035D9FB05A00CB05 /* Pods-Flikr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flikr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flikr/Pods-Flikr.release.xcconfig"; sourceTree = "<group>"; };
 		F40E4A493B5EE1311C591A2F /* Pods_CallBlocka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CallBlocka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F615A9AA1E82147DD96CC669 /* Pods-Flikr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flikr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flikr/Pods-Flikr.debug.xcconfig"; sourceTree = "<group>"; };
@@ -216,6 +220,25 @@
 			path = SharedStorage;
 			sourceTree = "<group>";
 		};
+		170BF39521934A5B00BD8ACC /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				170BF39621934A5B00BD8ACC /* MyTabBar.swift */,
+				170BF39721934A5B00BD8ACC /* MyTabBar+UITabBarControllerDelegate.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		170BF39C21934D3D00BD8ACC /* Ignore */ = {
+			isa = PBXGroup;
+			children = (
+				170BF39F21934D3D00BD8ACC /* ContactDetailVC.swift */,
+				170BF39D21934D3D00BD8ACC /* ContactDetailVC+UITableviewDataSource.swift */,
+				170BF39E21934D3D00BD8ACC /* DebugView.swift */,
+			);
+			path = Ignore;
+			sourceTree = "<group>";
+		};
 		17C6AC812191EFC300482704 /* callHandler */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				17C6AC912192064F00482704 /* AppDelegate.swift */,
+				170BF3A321934EDD00BD8ACC /* AppDelegate+UI.swift */,
 				17C6ACA321920EAB00482704 /* AppDelegate+Callkit.swift */,
 			);
 			path = App;
@@ -354,18 +378,16 @@
 		83EA5B8D2183787800FD6A0E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1725328A21932AD500ED0E7A /* AddBlockContactVC.swift */,
+				170BF39C21934D3D00BD8ACC /* Ignore */,
 				83EA5B902183787800FD6A0E /* Cells */,
-				83EA5B982183787800FD6A0E /* DebugView.swift */,
+				170BF39521934A5B00BD8ACC /* TabBar */,
+				1725328A21932AD500ED0E7A /* AddBlockContactVC.swift */,
+				170BF39A21934C6900BD8ACC /* AddBlockContactVC+CallKit.swift */,
+				176CA80C21922D2F00CC7431 /* ContactVC.swift */,
+				176CA80E21922D2F00CC7431 /* ContactVC+UITableviewDataSource.swift */,
 				83EA5B972183787800FD6A0E /* LandingVC.swift */,
 				17EB592721875CD300ABA010 /* LandingVC+UICollectionView.swift */,
 				83EA5B8E2183787800FD6A0E /* LandingVC+UITableView.swift */,
-				176CA80B21922D2F00CC7431 /* ContactDetailVC.swift */,
-				176CA80D21922D2F00CC7431 /* ContactDetailVC+UITableviewDataSource.swift */,
-				176CA80C21922D2F00CC7431 /* ContactVC.swift */,
-				176CA80E21922D2F00CC7431 /* ContactVC+UITableviewDataSource.swift */,
-				83EA5B8F2183787800FD6A0E /* MyTabBar.swift */,
-				83EA5B992183787800FD6A0E /* MyTabBar+UITabBarControllerDelegate.swift */,
 				176CA8072192272E00CC7431 /* TutorialViewController.swift */,
 				83EA5B962183787800FD6A0E /* VisualManager.swift */,
 			);
@@ -646,25 +668,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				176CA81421922F5700CC7431 /* DataManager+Callkit.swift in Sources */,
-				176CA80F21922D3000CC7431 /* ContactDetailVC.swift in Sources */,
 				83EA5BA32183787800FD6A0E /* APIManager.swift in Sources */,
+				170BF3A421934EDD00BD8ACC /* AppDelegate+UI.swift in Sources */,
 				170BF3912193484700BD8ACC /* VideoCollectionViewCell+Snapkit.swift in Sources */,
 				17C6AC98219207C900482704 /* Call.swift in Sources */,
 				17C6AC9B21920D5F00482704 /* ProviderDelegate.swift in Sources */,
 				83EA5B9C2183787800FD6A0E /* UIWindow+Category.swift in Sources */,
 				17253285219317FE00ED0E7A /* ContactTableViewCell.swift in Sources */,
+				170BF3A221934D3D00BD8ACC /* ContactDetailVC.swift in Sources */,
 				17C6ACA62192108900482704 /* NSUserActivity+StartCallConvertible.swift in Sources */,
+				170BF3A021934D3D00BD8ACC /* ContactDetailVC+UITableviewDataSource.swift in Sources */,
 				176CA81221922D3000CC7431 /* ContactVC+UITableviewDataSource.swift in Sources */,
 				17C6AC97219207C900482704 /* CallManager.swift in Sources */,
 				83EA5B9B2183787800FD6A0E /* Notifications.swift in Sources */,
-				176CA81121922D3000CC7431 /* ContactDetailVC+UITableviewDataSource.swift in Sources */,
-				83EA5BA52183787800FD6A0E /* MyTabBar.swift in Sources */,
+				170BF39921934A5B00BD8ACC /* MyTabBar+UITabBarControllerDelegate.swift in Sources */,
 				83EA5B9A2183787800FD6A0E /* AppearanceService.swift in Sources */,
 				17C6ACAC2192244D00482704 /* UserDefaults+Extensions.swift in Sources */,
 				83EA5B9F2183787800FD6A0E /* Color.swift in Sources */,
-				83EA5BAE2183787800FD6A0E /* MyTabBar+UITabBarControllerDelegate.swift in Sources */,
+				170BF39821934A5B00BD8ACC /* MyTabBar.swift in Sources */,
 				17EB592821875CD400ABA010 /* LandingVC+UICollectionView.swift in Sources */,
-				83EA5BAD2183787800FD6A0E /* DebugView.swift in Sources */,
 				17C6ACA021920DDB00482704 /* SpeakerboxCall.swift in Sources */,
 				83EA5BAC2183787800FD6A0E /* LandingVC.swift in Sources */,
 				176CA81021922D3000CC7431 /* ContactVC.swift in Sources */,
@@ -676,9 +698,11 @@
 				83EA5B9D2183787800FD6A0E /* Placeholder.swift in Sources */,
 				17C6ACA221920DEE00482704 /* SpeakerboxCallManager.swift in Sources */,
 				17C6ACA8219210A000482704 /* StartCallConvertible.swift in Sources */,
+				170BF3A121934D3D00BD8ACC /* DebugView.swift in Sources */,
 				83EA5BA22183787800FD6A0E /* CustomURLCache.swift in Sources */,
 				83EA5BA12183787800FD6A0E /* Models.swift in Sources */,
 				17EB592A2187634700ABA010 /* FeaturedCollectionViewCell.swift in Sources */,
+				170BF39B21934C6900BD8ACC /* AddBlockContactVC+CallKit.swift in Sources */,
 				170BF3922193484700BD8ACC /* VideoCollectionViewCell.swift in Sources */,
 				17253287219320E600ED0E7A /* LandingHeaderView.swift in Sources */,
 				1725328B21932AD500ED0E7A /* AddBlockContactVC.swift in Sources */,

@@ -2,19 +2,25 @@
 import UIKit
 import CallKit
 import PushKit
+import SharedStorage
+
 
 extension AppDelegate :PKPushRegistryDelegate{
     func configureCallKit(){
-
-        
         pushRegistry.delegate = self
         pushRegistry.desiredPushTypes = [.voIP]
-        
         providerDelegate = ProviderDelegate(callManager: callManager)
         
-   
-        
     }
+    
+    func addScamNumbers(){
+        print("⛳️ INFO: add default scam numbers")
+        let allPhoneNumbers = [ 123,253_950_1212 ]
+        for number in allPhoneNumbers{
+            SharedStorage.shared.add(phoneNumber: Int64(number), label: "SCAM", isScam: true)
+        }
+    }
+    
     
     func testIncomingCall(){
         let handle = "123" // why doesn't this block???

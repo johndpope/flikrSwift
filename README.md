@@ -14,6 +14,7 @@ I've added the CallDirectoryHandler.swift extension to block scam calls and aler
       
 I wanted to fake a call using following code to simulate incoming calls / this required the additional Apple files to be added into       
 External/Apple folder that I've marked as they have been copied and pasted. 
+This the Call Me button. 
       
 ````swift
         let handle = CXHandle(type: .phoneNumber, value: handle)
@@ -24,16 +25,17 @@ External/Apple folder that I've marked as they have been copied and pasted.
         let transaction = CXTransaction()
         transaction.addAction(startCallAction)
 ````
-This worked - and can be invoked by calling testIncomingCall() in appdelegate - it seems that the voip doesn't adhere to the CallDirectoryHandler though.
+
    
       
       
 **Limitations with code**      
-The out of the CallDirectoryHandler is hard coded to specific numbers.      
+The generic CallDirectoryHandler is hard coded to specific numbers.      
 This will quickly run into problems when we want to add numbers more dynamically.      
 We want our ios app to talk to the extension to refresh / add numbers.      
 There's no shared storage / db layer in this app.      
-This project achieved this integration - and while I could cherry pick code to incorporate - this is beyond scope of project.     
+This project achieved this integration - and while I could cherry pick code to incorporate - this is beyond scope of project.   
+I added this and wired it up to add numbers - but 
 https://github.com/beobyte/GuessWho/blob/master/SharedStorage/SharedStorage.swift      
 
 
@@ -47,11 +49,4 @@ Using NSUserDefaults as shared storage - this approach was taken here -
 https://github.com/BCSingh/CallBlocker     
 saving / storing to defaults can be slow - so with a large database of numbers this could      
 have performance issues.      
-     
-     
-     
-probably better approach would be to use Realm which is fast / and non blocking for ui.     
-
-
-
 

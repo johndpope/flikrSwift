@@ -40,10 +40,13 @@ class CallDirectoryHandler: CXCallDirectoryProvider {
         // consider only loading a subset of numbers at a given time and using autorelease pool(s) to release objects allocated during each batch of numbers which are loaded.
         //
         // Numbers must be provided in numerically ascending order.
-        let allPhoneNumbers: [CXCallDirectoryPhoneNumber] = [ 123,253_950_1212 ]
-        for phoneNumber in allPhoneNumbers {
-            context.addBlockingEntry(withNextSequentialPhoneNumber: phoneNumber)
+//        let allPhoneNumbers: [CXCallDirectoryPhoneNumber] = [ 123,253_950_1212 ]
+        if let allPhoneNumbers = SharedStorage.shared.allScamPhoneNumbers() {
+            for phoneNumber in allPhoneNumbers{
+                context.addIdentificationEntry(withNextSequentialPhoneNumber: phoneNumber.phoneNumber, label: phoneNumber.label ?? "")
+            }
         }
+        
     }
 
     private func addOrRemoveIncrementalBlockingPhoneNumbers(to context: CXCallDirectoryExtensionContext) {
