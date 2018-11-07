@@ -1,5 +1,15 @@
 import Foundation
 import UIKit
+import SharedStorage
+import CallKit
+
+
+extension String {
+    private static var digits = UnicodeScalar("0")..."9"
+    var digits: String {
+        return String(unicodeScalars.filter{ String.digits ~= $0 })
+    }
+}
 
 
 extension ContactVC {
@@ -28,10 +38,18 @@ extension ContactVC {
     
     public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
-
+                let contact = self.contactArray[indexPath.row]
+                let phoneNumbers = contact.phoneNumbers
+                if phoneNumbers.count > 0 {
+                    let blockNumber  = phoneNumbers[0].value.stringValue
+                 
+                    SharedStorage.shared.add(phoneNumber: Int64(blockNumber.digits)!, label: "SCAM", isScam: true)
+                    CXCallDirectoryManager.sharedInstance.reloadExtension(withIdentifier:callHandlerExtensionIdentifier, completionHandler:nil )
+                }
         }
     }
 
+    
     
     func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("didSelectRowAt")
