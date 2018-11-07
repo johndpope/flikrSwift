@@ -10,6 +10,10 @@ extension ScamVC:UITableViewDataSource,UITableViewDelegate {
         return 1
     }
     
+    func tableView(_: UITableView, heightForRowAt _: IndexPath) -> CGFloat {
+        return 80
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         if let contoller = fetchedResultsController {
@@ -20,13 +24,14 @@ extension ScamVC:UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        if let cell = tableView.dequeueReusableCell(withIdentifier: ScamPhoneNumberCell.ID) as? ScamPhoneNumberCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: ScamPhoneNumberCell.ID, for: indexPath) as? ScamPhoneNumberCell{
+
             let phoneNumber = fetchedResultsController.object(at: indexPath)
             let strNumber =  String(phoneNumber.phoneNumber)
             cell.configureCell(number:strNumber)
+            return cell
         }
-        return UITableViewCell()
+        return ScamPhoneNumberCell()
     }
     
     // MARK: - UITableViewDelegate

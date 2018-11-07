@@ -42,11 +42,12 @@ extension ScamVC: NSFetchedResultsControllerDelegate {
             myTableView.deleteRows(at: [indexPath!], with: .automatic)
             
         case .update:
-            let cell = myTableView.cellForRow(at: indexPath!) as! ScamPhoneNumberCell
-            let phoneNumber = fetchedResultsController.object(at: indexPath!)
-            let strNumber =  String(phoneNumber.phoneNumber)
-            cell.configureCell(number:strNumber)
-
+            if let cell = myTableView.cellForRow(at: indexPath!) as? ScamPhoneNumberCell{
+                let phoneNumber = fetchedResultsController.object(at: indexPath!)
+                let strNumber =  String(phoneNumber.phoneNumber)
+                cell.configureCell(number:strNumber)
+            }
+           
             
         case .move:
             myTableView.deleteRows(at: [indexPath!], with: .automatic)

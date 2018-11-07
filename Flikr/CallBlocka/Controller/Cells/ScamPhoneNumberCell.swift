@@ -18,11 +18,13 @@ class ScamPhoneNumberCell: TableViewCell {
         super.prepareForReuse()
         backgroundColor = UIColor.onyx
     }
+    
     public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+
         selectionStyle = .none
-
-
+        contentView.backgroundColor = .clear
+        backgroundColor = UIColor.onyx
 
         addSubview(mainLabel)
         mainLabel.font = UIFont.systemFont(ofSize: 14, weight: UIFont.Weight.medium)
@@ -39,9 +41,7 @@ class ScamPhoneNumberCell: TableViewCell {
     }
 
     func configureCell(number: String) {
-        
       mainLabel.text = number
-        
     }
     
 
