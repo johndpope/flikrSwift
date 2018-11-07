@@ -14,6 +14,9 @@ class LandingVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
     }()
     var headerCV:UICollectionView!
     
+    var featuredTableHeader = FeaturedTableViewHeader()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,7 +32,7 @@ class LandingVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         myTableView.dataSource = self
         myTableView.delegate = self
 
-        addHeaderView()
+  
         reloadTableView()
         configureConstraints()
         addListeners()
@@ -38,32 +41,20 @@ class LandingVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
     // Featured Header image
     func addHeaderView(){
-        cellLayout.scrollDirection = .horizontal
-        headerCV = UICollectionView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: featuredHeaderHeight), collectionViewLayout: cellLayout)
-        headerCV.register(FeaturedCollectionViewCell.self, forCellWithReuseIdentifier: FeaturedCollectionViewCell.ID)
-        headerCV.isPagingEnabled = true
-        headerCV.autoresizingMask = [.flexibleWidth]
-        headerCV.showsVerticalScrollIndicator = false
-        headerCV.showsHorizontalScrollIndicator = true
-        headerCV.isScrollEnabled = true
-        headerCV.bounces = true
-        headerCV.delegate = self
-        headerCV.dataSource = self
-        headerCV.backgroundColor = UIColor.onyx
-        myTableView.tableHeaderView = headerCV
-
+      
+        myTableView.tableHeaderView = featuredTableHeader
+        let photo = MyPhoto(id: 1, title: "Phone Scammers", photoDescription: "", thumbURL: "https://www.accountingweb.com/sites/default/files/styles/banner/public/phone_scam_fatihhoca.jpg?itok=ZAjH8_iD")
+        featuredTableHeader.configureHeader(photo: photo)
         
     }
     
     
     func addListeners(){
         NotificationCenter.default.addObserver(self, selector: #selector(dataLoaded),  name: kFlikrLoaded, object: nil)
-          NotificationCenter.default.addObserver(self, selector: #selector(featuredDataLoaded),  name: kFeaturedLoaded, object: nil)
+
     }
     
-    @objc func featuredDataLoaded(){
-             headerCV.reloadData()
-    }
+
     @objc func dataLoaded(){
         myTableView.reloadData()
     }

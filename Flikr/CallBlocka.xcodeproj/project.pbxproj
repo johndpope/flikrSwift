@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17253285219317FE00ED0E7A /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17253284219317FE00ED0E7A /* ContactTableViewCell.swift */; };
+		17253287219320E600ED0E7A /* LandingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17253286219320E600ED0E7A /* LandingHeaderView.swift */; };
 		176CA8082192272E00CC7431 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176CA8072192272E00CC7431 /* TutorialViewController.swift */; };
 		176CA80A219229CB00CC7431 /* Scam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 176CA809219229CB00CC7431 /* Scam.jpg */; };
 		176CA80F21922D3000CC7431 /* ContactDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176CA80B21922D2F00CC7431 /* ContactDetailVC.swift */; };
@@ -84,6 +85,7 @@
 /* Begin PBXFileReference section */
 		02C52611C148D3F7EA1D124B /* Pods_Flikr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flikr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17253284219317FE00ED0E7A /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		17253286219320E600ED0E7A /* LandingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingHeaderView.swift; sourceTree = "<group>"; };
 		176CA8072192272E00CC7431 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		176CA809219229CB00CC7431 /* Scam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Scam.jpg; sourceTree = "<group>"; };
 		176CA80B21922D2F00CC7431 /* ContactDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailVC.swift; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 		83EA5B902183787800FD6A0E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				17253286219320E600ED0E7A /* LandingHeaderView.swift */,
 				17253284219317FE00ED0E7A /* ContactTableViewCell.swift */,
 				17EB59292187634700ABA010 /* FeaturedCollectionViewCell.swift */,
 				83EA5B912183787800FD6A0E /* VideoCollectionViewCell+Snapkit.swift */,
@@ -565,6 +568,7 @@
 				83EA5BA22183787800FD6A0E /* CustomURLCache.swift in Sources */,
 				83EA5BA12183787800FD6A0E /* Models.swift in Sources */,
 				17EB592A2187634700ABA010 /* FeaturedCollectionViewCell.swift in Sources */,
+				17253287219320E600ED0E7A /* LandingHeaderView.swift in Sources */,
 				83EA5BAB2183787800FD6A0E /* VisualManager.swift in Sources */,
 				83EA5BA42183787800FD6A0E /* LandingVC+UITableView.swift in Sources */,
 				176CA8082192272E00CC7431 /* TutorialViewController.swift in Sources */,
