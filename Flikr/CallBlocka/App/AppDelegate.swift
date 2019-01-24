@@ -1,6 +1,7 @@
 
 import UIKit
 import PushKit
+import AWSCognitoIdentityProvider
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -11,10 +12,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let callManager = SpeakerboxCallManager()
     var providerDelegate: ProviderDelegate?
     let pushRegistry = PKPushRegistry(queue: DispatchQueue.main)
+    
+    // Merge AWS
+
+    var signInViewController: SignInViewController?
+    var mfaViewController: MFAViewController?
+    var navigationController: UINavigationController?
+    var storyboard: UIStoryboard?
+    var rememberDeviceCompletionSource: AWSTaskCompletionSource<NSNumber>?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
 
+        configureAWS()
         buildWindow()
         addDebugConsole()
         configureAppearanceService()

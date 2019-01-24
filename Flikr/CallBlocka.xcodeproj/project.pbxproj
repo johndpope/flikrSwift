@@ -55,7 +55,6 @@
 		17C6ACAC2192244D00482704 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6ACAB2192244D00482704 /* UserDefaults+Extensions.swift */; };
 		17EB592821875CD400ABA010 /* LandingVC+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB592721875CD300ABA010 /* LandingVC+UICollectionView.swift */; };
 		17EB592A2187634700ABA010 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EB59292187634700ABA010 /* FeaturedCollectionViewCell.swift */; };
-		83EA5B6E2183770200FD6A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EA5B6C2183770200FD6A0E /* Main.storyboard */; };
 		83EA5B702183770300FD6A0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EA5B6F2183770300FD6A0E /* Assets.xcassets */; };
 		83EA5B732183770300FD6A0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EA5B712183770300FD6A0E /* LaunchScreen.storyboard */; };
 		83EA5B9A2183787800FD6A0E /* AppearanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B812183787800FD6A0E /* AppearanceService.swift */; };
@@ -72,6 +71,19 @@
 		83EA5BA72183787800FD6A0E /* NetworkLandingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B922183787800FD6A0E /* NetworkLandingCell.swift */; };
 		83EA5BA82183787800FD6A0E /* HeaderSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B932183787800FD6A0E /* HeaderSectionView.swift */; };
 		83EA5BAC2183787800FD6A0E /* LandingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA5B972183787800FD6A0E /* LandingVC.swift */; };
+		8497419921FA2736003ACE33 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497418521FA2736003ACE33 /* SignUpViewController.swift */; };
+		8497419A21FA2736003ACE33 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497418621FA2736003ACE33 /* Constants.swift */; };
+		8497419B21FA2736003ACE33 /* UserDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497418721FA2736003ACE33 /* UserDetailTableViewController.swift */; };
+		8497419C21FA2736003ACE33 /* DevicesDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497418821FA2736003ACE33 /* DevicesDetailTableViewController.swift */; };
+		8497419E21FA2736003ACE33 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497418A21FA2736003ACE33 /* ForgotPasswordViewController.swift */; };
+		849741A021FA2736003ACE33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8497418D21FA2736003ACE33 /* Main.storyboard */; };
+		849741A121FA2736003ACE33 /* ConfirmSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497418F21FA2736003ACE33 /* ConfirmSignUpViewController.swift */; };
+		849741A321FA2736003ACE33 /* ConfirmForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497419221FA2736003ACE33 /* ConfirmForgotPasswordViewController.swift */; };
+		849741A521FA2736003ACE33 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 8497419421FA2736003ACE33 /* awsconfiguration.json */; };
+		849741A621FA2736003ACE33 /* MFAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8497419521FA2736003ACE33 /* MFAViewController.xib */; };
+		849741A721FA2736003ACE33 /* MFAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497419621FA2736003ACE33 /* MFAViewController.swift */; };
+		849741A921FA2736003ACE33 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497419821FA2736003ACE33 /* SignInViewController.swift */; };
+		849741AB21FA2A89003ACE33 /* AppDelegate+Cognito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849741AA21FA2A89003ACE33 /* AppDelegate+Cognito.swift */; };
 		EBA292D467F4CDB381D66BE9 /* Pods_CallBlocka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40E4A493B5EE1311C591A2F /* Pods_CallBlocka.framework */; };
 /* End PBXBuildFile section */
 
@@ -171,7 +183,6 @@
 		32D960BD8E4D47331B806105 /* Pods-CallBlocka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBlocka.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CallBlocka/Pods-CallBlocka.debug.xcconfig"; sourceTree = "<group>"; };
 		5C98879F886E61991C993F5D /* Pods-CallBlocka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBlocka.release.xcconfig"; path = "Pods/Target Support Files/Pods-CallBlocka/Pods-CallBlocka.release.xcconfig"; sourceTree = "<group>"; };
 		83EA5B652183770200FD6A0E /* CallBlocka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallBlocka.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		83EA5B6D2183770200FD6A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83EA5B6F2183770300FD6A0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83EA5B722183770300FD6A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83EA5B742183770300FD6A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -189,6 +200,19 @@
 		83EA5B922183787800FD6A0E /* NetworkLandingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLandingCell.swift; sourceTree = "<group>"; };
 		83EA5B932183787800FD6A0E /* HeaderSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderSectionView.swift; sourceTree = "<group>"; };
 		83EA5B972183787800FD6A0E /* LandingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingVC.swift; sourceTree = "<group>"; };
+		8497418521FA2736003ACE33 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8497418621FA2736003ACE33 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8497418721FA2736003ACE33 /* UserDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewController.swift; sourceTree = "<group>"; };
+		8497418821FA2736003ACE33 /* DevicesDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesDetailTableViewController.swift; sourceTree = "<group>"; };
+		8497418A21FA2736003ACE33 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		8497418E21FA2736003ACE33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8497418F21FA2736003ACE33 /* ConfirmSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmSignUpViewController.swift; sourceTree = "<group>"; };
+		8497419221FA2736003ACE33 /* ConfirmForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		8497419421FA2736003ACE33 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		8497419521FA2736003ACE33 /* MFAViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFAViewController.xib; sourceTree = "<group>"; };
+		8497419621FA2736003ACE33 /* MFAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFAViewController.swift; sourceTree = "<group>"; };
+		8497419821FA2736003ACE33 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		849741AA21FA2A89003ACE33 /* AppDelegate+Cognito.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Cognito.swift"; sourceTree = "<group>"; };
 		DDF70901035D9FB05A00CB05 /* Pods-Flikr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flikr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flikr/Pods-Flikr.release.xcconfig"; sourceTree = "<group>"; };
 		F40E4A493B5EE1311C591A2F /* Pods_CallBlocka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CallBlocka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F615A9AA1E82147DD96CC669 /* Pods-Flikr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flikr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flikr/Pods-Flikr.debug.xcconfig"; sourceTree = "<group>"; };
@@ -265,6 +289,7 @@
 		17C6AC902192064F00482704 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				849741AA21FA2A89003ACE33 /* AppDelegate+Cognito.swift */,
 				17C6AC912192064F00482704 /* AppDelegate.swift */,
 				170BF3A321934EDD00BD8ACC /* AppDelegate+UI.swift */,
 				17C6ACA321920EAB00482704 /* AppDelegate+Callkit.swift */,
@@ -340,6 +365,7 @@
 		83EA5B672183770200FD6A0E /* CallBlocka */ = {
 			isa = PBXGroup;
 			children = (
+				8497418421FA2736003ACE33 /* Cognito */,
 				17C6AC902192064F00482704 /* App */,
 				83EA5B6F2183770300FD6A0E /* Assets.xcassets */,
 				83EA5B8D2183787800FD6A0E /* Controller */,
@@ -348,7 +374,6 @@
 				17C6AC93219207C900482704 /* External */,
 				83EA5B742183770300FD6A0E /* Info.plist */,
 				83EA5B712183770300FD6A0E /* LaunchScreen.storyboard */,
-				83EA5B6C2183770200FD6A0E /* Main.storyboard */,
 				17C6AC9C21920D9900482704 /* Other */,
 			);
 			path = CallBlocka;
@@ -424,6 +449,25 @@
 				170BF38F2193484600BD8ACC /* VideoCollectionViewCell+Snapkit.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		8497418421FA2736003ACE33 /* Cognito */ = {
+			isa = PBXGroup;
+			children = (
+				8497418521FA2736003ACE33 /* SignUpViewController.swift */,
+				8497418621FA2736003ACE33 /* Constants.swift */,
+				8497418721FA2736003ACE33 /* UserDetailTableViewController.swift */,
+				8497418821FA2736003ACE33 /* DevicesDetailTableViewController.swift */,
+				8497418A21FA2736003ACE33 /* ForgotPasswordViewController.swift */,
+				8497418D21FA2736003ACE33 /* Main.storyboard */,
+				8497418F21FA2736003ACE33 /* ConfirmSignUpViewController.swift */,
+				8497419221FA2736003ACE33 /* ConfirmForgotPasswordViewController.swift */,
+				8497419421FA2736003ACE33 /* awsconfiguration.json */,
+				8497419521FA2736003ACE33 /* MFAViewController.xib */,
+				8497419621FA2736003ACE33 /* MFAViewController.swift */,
+				8497419821FA2736003ACE33 /* SignInViewController.swift */,
+			);
+			path = Cognito;
 			sourceTree = "<group>";
 		};
 		C8BAB9B548F6107314A6E81E /* Pods */ = {
@@ -590,12 +634,14 @@
 			files = (
 				17C6AC9E21920D9900482704 /* Ringtone.aif in Resources */,
 				83EA5B732183770300FD6A0E /* LaunchScreen.storyboard in Resources */,
+				849741A521FA2736003ACE33 /* awsconfiguration.json in Resources */,
 				170BF3942193489200BD8ACC /* dna@2x.png in Resources */,
 				17C6ACAA21921D4C00482704 /* README.md in Resources */,
+				849741A021FA2736003ACE33 /* Main.storyboard in Resources */,
 				83EA5B702183770300FD6A0E /* Assets.xcassets in Resources */,
 				17253289219328B200ED0E7A /* download@2x.png in Resources */,
-				83EA5B6E2183770200FD6A0E /* Main.storyboard in Resources */,
 				176CA80A219229CB00CC7431 /* Scam.jpg in Resources */,
+				849741A621FA2736003ACE33 /* MFAViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +679,9 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CallBlocka/Pods-CallBlocka-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/CodableAlamofire/CodableAlamofire.framework",
@@ -648,6 +697,9 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableAlamofire.framework",
@@ -691,12 +743,17 @@
 			files = (
 				176CA81421922F5700CC7431 /* DataManager+Callkit.swift in Sources */,
 				83EA5BA32183787800FD6A0E /* APIManager.swift in Sources */,
+				849741A121FA2736003ACE33 /* ConfirmSignUpViewController.swift in Sources */,
+				8497419C21FA2736003ACE33 /* DevicesDetailTableViewController.swift in Sources */,
 				170BF3A421934EDD00BD8ACC /* AppDelegate+UI.swift in Sources */,
 				170BF3912193484700BD8ACC /* VideoCollectionViewCell+Snapkit.swift in Sources */,
+				8497419921FA2736003ACE33 /* SignUpViewController.swift in Sources */,
+				849741A721FA2736003ACE33 /* MFAViewController.swift in Sources */,
 				17C6AC98219207C900482704 /* Call.swift in Sources */,
 				17C6AC9B21920D5F00482704 /* ProviderDelegate.swift in Sources */,
 				83EA5B9C2183787800FD6A0E /* UIWindow+Category.swift in Sources */,
 				170BF3AA2193580C00BD8ACC /* ScamVC+UITableView.swift in Sources */,
+				849741AB21FA2A89003ACE33 /* AppDelegate+Cognito.swift in Sources */,
 				17253285219317FE00ED0E7A /* ContactTableViewCell.swift in Sources */,
 				170BF3AC21935D9B00BD8ACC /* ScamPhoneNumberCell.swift in Sources */,
 				170BF3AE21935E5B00BD8ACC /* ScamVC+CoreData.swift in Sources */,
@@ -711,6 +768,7 @@
 				83EA5B9A2183787800FD6A0E /* AppearanceService.swift in Sources */,
 				17C6ACAC2192244D00482704 /* UserDefaults+Extensions.swift in Sources */,
 				83EA5B9F2183787800FD6A0E /* Color.swift in Sources */,
+				8497419B21FA2736003ACE33 /* UserDetailTableViewController.swift in Sources */,
 				170BF39821934A5B00BD8ACC /* MyTabBar.swift in Sources */,
 				17EB592821875CD400ABA010 /* LandingVC+UICollectionView.swift in Sources */,
 				17C6ACA021920DDB00482704 /* SpeakerboxCall.swift in Sources */,
@@ -722,12 +780,15 @@
 				83EA5BA72183787800FD6A0E /* NetworkLandingCell.swift in Sources */,
 				83EA5BA02183787800FD6A0E /* DataManager.swift in Sources */,
 				17C6ACA421920EAB00482704 /* AppDelegate+Callkit.swift in Sources */,
+				849741A321FA2736003ACE33 /* ConfirmForgotPasswordViewController.swift in Sources */,
 				170BF3B02193667300BD8ACC /* ScamVC+UI.swift in Sources */,
+				8497419A21FA2736003ACE33 /* Constants.swift in Sources */,
 				83EA5B9D2183787800FD6A0E /* Placeholder.swift in Sources */,
 				17C6ACA221920DEE00482704 /* SpeakerboxCallManager.swift in Sources */,
 				17C6ACA8219210A000482704 /* StartCallConvertible.swift in Sources */,
 				170BF3A92193580C00BD8ACC /* ScamVC.swift in Sources */,
 				170BF3A121934D3D00BD8ACC /* DebugView.swift in Sources */,
+				849741A921FA2736003ACE33 /* SignInViewController.swift in Sources */,
 				83EA5BA22183787800FD6A0E /* CustomURLCache.swift in Sources */,
 				83EA5BA12183787800FD6A0E /* Models.swift in Sources */,
 				17EB592A2187634700ABA010 /* FeaturedCollectionViewCell.swift in Sources */,
@@ -735,6 +796,7 @@
 				170BF3922193484700BD8ACC /* VideoCollectionViewCell.swift in Sources */,
 				17253287219320E600ED0E7A /* LandingHeaderView.swift in Sources */,
 				1725328B21932AD500ED0E7A /* AddBlockContactVC.swift in Sources */,
+				8497419E21FA2736003ACE33 /* ForgotPasswordViewController.swift in Sources */,
 				83EA5BA42183787800FD6A0E /* LandingVC+UITableView.swift in Sources */,
 				176CA8082192272E00CC7431 /* TutorialVC.swift in Sources */,
 				17C6AC922192064F00482704 /* AppDelegate.swift in Sources */,
@@ -757,20 +819,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		83EA5B6C2183770200FD6A0E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				83EA5B6D2183770200FD6A0E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		83EA5B712183770300FD6A0E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				83EA5B722183770300FD6A0E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8497418D21FA2736003ACE33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8497418E21FA2736003ACE33 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1003,7 +1065,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 32D960BD8E4D47331B806105 /* Pods-CallBlocka.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CallBlocka.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -1024,7 +1086,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5C98879F886E61991C993F5D /* Pods-CallBlocka.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CallBlocka.entitlements;
 				CODE_SIGN_STYLE = Automatic;

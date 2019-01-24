@@ -13,9 +13,13 @@ extension AppDelegate {
     // Create main window with uitabar controller via MyTabBar
     // encapsulate view controllers inside uinvagigation controllers
     func buildWindow() {
+        
         window = UIWindow.window()
-        
-        
+        let     navigationController = UIStoryboard.mainStoryboard().instantiateInitialViewController()
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+        /*
+
         let mainTBC = MainTabBarController()
         mainTBC.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         mainTBC.viewControllers = MyTabBar.buildNavigationControllers()
@@ -27,7 +31,7 @@ extension AppDelegate {
         // weak global variables to navigate around programatically
         DM.weakWindow = window
         MyTabBar.shared.weakMainTBC = mainTBC
-        DM.appDelegate = self
+        DM.appDelegate = self*/
     }
     
     func addDebugConsole(){
