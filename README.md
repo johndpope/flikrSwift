@@ -4,10 +4,16 @@
 
 
 This project is built on top of an ios challenge to build an appkit that can demonstrate callkit capabilites.
+(The callBlocka is built on top of a Flickr app challenge.)
 The sign in flow / is built with AWS cognito pools. 
 Once you have registered, you can click the Call Blocka button to reveal a list with contacts.
 
 
+![Screenshot](Images/hero1.png)
+![Screenshot](Images/hero2.png)
+![Screenshot](Images/hero3.png)
+![Screenshot](Images/hero4.png)
+![Screenshot](Images/Hero.png)
 
 
 https://www.raywenderlich.com/701-callkit-tutorial-for-ios            
