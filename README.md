@@ -1,4 +1,15 @@
-# Call kit scam call blocker      
+# Spectrum challenge
+
+
+
+
+This project is built on top of an ios challenge to build an appkit that can demonstrate callkit capabilites.
+The sign in flow / is built with AWS cognito pools. 
+Once you have registered, you can click the Call Blocka button to reveal a list with contacts.
+
+
+
+
 https://www.raywenderlich.com/701-callkit-tutorial-for-ios            
 
       
