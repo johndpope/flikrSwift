@@ -365,7 +365,7 @@
 		83EA5B672183770200FD6A0E /* CallBlocka */ = {
 			isa = PBXGroup;
 			children = (
-				8497418421FA2736003ACE33 /* Cognito */,
+				8497418421FA2736003ACE33 /* Cognito-AWS */,
 				17C6AC902192064F00482704 /* App */,
 				83EA5B6F2183770300FD6A0E /* Assets.xcassets */,
 				83EA5B8D2183787800FD6A0E /* Controller */,
@@ -451,7 +451,7 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		8497418421FA2736003ACE33 /* Cognito */ = {
+		8497418421FA2736003ACE33 /* Cognito-AWS */ = {
 			isa = PBXGroup;
 			children = (
 				8497418521FA2736003ACE33 /* SignUpViewController.swift */,
@@ -467,7 +467,7 @@
 				8497419621FA2736003ACE33 /* MFAViewController.swift */,
 				8497419821FA2736003ACE33 /* SignInViewController.swift */,
 			);
-			path = Cognito;
+			path = "Cognito-AWS";
 			sourceTree = "<group>";
 		};
 		C8BAB9B548F6107314A6E81E /* Pods */ = {

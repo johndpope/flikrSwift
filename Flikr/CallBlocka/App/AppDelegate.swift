@@ -37,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             addScamNumbers()
             addSuspiciousCallNumbers()
         }
+        DM.appDelegate = self
         
         return true
     }

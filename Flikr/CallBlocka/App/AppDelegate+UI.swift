@@ -18,22 +18,25 @@ extension AppDelegate {
         let     navigationController = UIStoryboard.mainStoryboard().instantiateInitialViewController()
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
-        /*
-
-        let mainTBC = MainTabBarController()
-        mainTBC.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        mainTBC.viewControllers = MyTabBar.buildNavigationControllers()
-        mainTBC.delegate = MyTabBar.shared
-        mainTBC.tabBar.isTranslucent = true
-        window?.rootViewController = mainTBC
-        window?.makeKeyAndVisible()
-        
-        // weak global variables to navigate around programatically
-        DM.weakWindow = window
-        MyTabBar.shared.weakMainTBC = mainTBC
-        DM.appDelegate = self*/
+    
     }
     
+    func enterCallBlockaMode(){
+
+         
+         let mainTBC = MainTabBarController()
+         mainTBC.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+         mainTBC.viewControllers = MyTabBar.buildNavigationControllers()
+         mainTBC.delegate = MyTabBar.shared
+         mainTBC.tabBar.isTranslucent = true
+         window?.rootViewController = mainTBC
+         window?.makeKeyAndVisible()
+         
+         // weak global variables to navigate around programatically
+         DM.weakWindow = window
+         MyTabBar.shared.weakMainTBC = mainTBC
+         DM.appDelegate = self
+    }
     func addDebugConsole(){
         print("⛳️ INFO: add debug console")
         DDLog.add(DDTTYLogger.sharedInstance, with: defaultDebugLevel) // TTY = Xcode console
