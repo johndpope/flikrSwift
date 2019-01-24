@@ -60,6 +60,16 @@ extension AppDelegate {
 
     }
     
+    func signout(){
+         let pool = AWSCognitoIdentityUserPool(forKey: AWSCognitoUserPoolsSignInProviderKey)
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType: CognitoIdentityUserPoolRegion, identityPoolId: CognitoIdentityUserPoolAppClientId, identityProviderManager:pool)
+        credentialsProvider.clearCredentials()
+        credentialsProvider.clearKeychain()
+        
+        let user = pool.currentUser()
+        user?.signOut()
+    }
+    
     
 }
 

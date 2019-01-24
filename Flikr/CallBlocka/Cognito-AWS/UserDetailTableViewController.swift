@@ -19,13 +19,18 @@ class UserDetailTableViewController : UITableViewController {
         
         let navItem = UIBarButtonItem(title: "Call Blocka", style: .plain, target: self, action:  #selector(callBlocka))
         self.navigationItem.rightBarButtonItem = navItem
+        
+        let navItem1 = UIBarButtonItem(title: "Sign Out", style: .plain, target: self, action:  #selector(signout))
+        self.navigationItem.leftBarButtonItem = navItem1
     }
     
+    @objc func signout(){
+        DM.appDelegate?.signout()
+        DM.appDelegate?.buildWindow()
+    }
     
     @objc func callBlocka(){
-        
         DM.appDelegate?.enterCallBlockaMode()
-
     }
     
     override func viewWillDisappear(_ animated: Bool) {
